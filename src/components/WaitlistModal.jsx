@@ -8,6 +8,7 @@ const roles = ['Engineering', 'Sales Ops', 'Product', 'Operations', 'Executive',
 export default function WaitlistModal({ open, onClose }) {
   const [step, setStep] = useState(1);
   const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [form, setForm] = useState({
     email: '',
     name: '',
@@ -73,13 +74,39 @@ export default function WaitlistModal({ open, onClose }) {
 
   const back = () => setStep((s) => s - 1);
 
-  const submit = () => {
+  const submit = async () => {
     if (!form.pilotInterest) {
       setErrors({ pilotInterest: 'Please select one' });
       return;
     }
-    console.log('Waitlist submission (modal):', form);
-    setStep(4);
+    
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "7d6c2fea-47ee-4fc1-98e1-bdcb03c39538",
+          subject: "New Waitlist Submission (Modal)",
+          from_name: form.name,
+          ...form,
+        }),
+      });
+      const result = await response.json();
+      if (result.success) {
+        setStep(4);
+      } else {
+        setErrors((prev) => ({ ...prev, submit: "There was an error submitting the form. Please try again." }));
+      }
+    } catch (error) {
+      setErrors((prev) => ({ ...prev, submit: "A network error occurred. Please try again." }));
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const reset = () => {
@@ -264,14 +291,20 @@ export default function WaitlistModal({ open, onClose }) {
                   {errors.pilotInterest && <p className="text-xs text-red-400 mt-1">{errors.pilotInterest}</p>}
                 </div>
               </div>
+              
+              {errors.submit && <p className="text-sm text-red-400 text-center mt-4">{errors.submit}</p>}
+              
               <div className="flex gap-3 mt-6">
-                <button onClick={back}
-                  className="flex items-center gap-1 px-4 py-3.5 rounded-xl border border-[#2a2a4a] text-slate-400 hover:text-white transition-colors cursor-pointer text-sm">
+                <button onClick={back} disabled={isSubmitting}
+                  className="flex items-center gap-1 px-4 py-3.5 rounded-xl border border-[#2a2a4a] text-slate-400 hover:text-white transition-colors cursor-pointer text-sm disabled:opacity-50">
                   <ArrowLeft size={16} /> Back
                 </button>
-                <button onClick={submit}
-                  className="btn-primary flex-1 rounded-xl px-6 py-3.5 text-sm font-semibold text-white cursor-pointer flex items-center justify-center gap-2">
-                  <span className="flex items-center gap-2">Join Waitlist <ArrowRight size={16} /></span>
+                <button onClick={submit} disabled={isSubmitting}
+                  className="btn-primary flex-1 rounded-xl px-6 py-3.5 text-sm font-semibold text-white cursor-pointer flex items-center justify-center gap-2 disabled:opacity-50">
+                  <span className="flex items-center gap-2">
+                    {isSubmitting ? 'Joining...' : 'Join Waitlist'} 
+                    {!isSubmitting && <ArrowRight size={16} />}
+                  </span>
                 </button>
               </div>
             </div>

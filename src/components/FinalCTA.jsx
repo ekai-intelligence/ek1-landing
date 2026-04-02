@@ -15,6 +15,7 @@ const painPoints = [
 export default function FinalCTA() {
   const ref = useStaggerReveal('.fade-in', 150);
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState({});
   const [form, setForm] = useState({
     email: '',
@@ -61,11 +62,37 @@ export default function FinalCTA() {
     return Object.keys(e).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validate()) return;
-    console.log('Waitlist submission (CTA form):', form);
-    setSubmitted(true);
+    
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "7d6c2fea-47ee-4fc1-98e1-bdcb03c39538",
+          subject: "New Waitlist Submission (CTA)",
+          from_name: form.company,
+          ...form,
+        }),
+      });
+      const result = await response.json();
+      if (result.success) {
+        setSubmitted(true);
+      } else {
+        setErrors((prev) => ({ ...prev, submit: "There was an error submitting the form." }));
+      }
+    } catch (error) {
+      setErrors((prev) => ({ ...prev, submit: "A network error occurred. Please try again." }));
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const update = (field, value) => {
@@ -174,13 +201,16 @@ export default function FinalCTA() {
             {errors.painPoint && <p className="text-xs text-red-400 mt-1">{errors.painPoint}</p>}
           </div>
 
+          {errors.submit && <p className="text-sm text-red-400 text-center">{errors.submit}</p>}
+
           <button
             type="submit"
-            className="btn-primary w-full rounded-xl px-8 py-4 text-base font-semibold text-white flex items-center justify-center gap-2 cursor-pointer mt-6"
+            disabled={isSubmitting}
+            className="btn-primary w-full rounded-xl px-8 py-4 text-base font-semibold text-white flex items-center justify-center gap-2 cursor-pointer mt-6 disabled:opacity-50"
           >
             <span className="flex items-center gap-2">
-              Join Waitlist
-              <ArrowRight size={18} />
+              {isSubmitting ? 'Joining...' : 'Join Waitlist'}
+              {!isSubmitting && <ArrowRight size={18} />}
             </span>
           </button>
 
