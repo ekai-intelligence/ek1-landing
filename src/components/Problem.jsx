@@ -3,8 +3,8 @@ import { Clock, Layers, DollarSign, ClipboardCopy, ShieldAlert, MessageSquareWar
 
 const stats = [
   { icon: Clock, value: '60%', label: 'of workday lost to app-toggling' },
-  { icon: Layers, value: '130+', label: 'siloed apps per enterprise' },
-  { icon: DollarSign, value: '$120K+', label: 'wasted per senior employee annually' },
+  { icon: Layers, value: '70+ ', label: 'siloed apps per enterprise' },
+  { icon: DollarSign, value: '$100K+', label: 'wasted per senior employee annually' },
 ];
 
 const painPoints = [
