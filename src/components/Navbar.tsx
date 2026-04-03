@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Logo from "@/components/Logo";
 
 const navLinks = [
   { label: "Problem", href: "#problem" },
@@ -18,9 +19,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/40">
       <div className="container flex h-16 items-center justify-between">
-        <a href="/" className="flex items-center gap-1.5 font-bold text-lg tracking-tight text-foreground">
-          <span className="text-primary">Action</span>
-          <span>Inbox</span>
+        <a href="/" aria-label="Action Inbox home">
+          <Logo size={34} variant="full" />
         </a>
 
         <div className="hidden md:flex items-center gap-8">
