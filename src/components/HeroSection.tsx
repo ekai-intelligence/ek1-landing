@@ -29,7 +29,8 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight leading-[1.05] mb-6 text-foreground"
         >
-          Stop Scanning 6 Apps{" "}. Start Responding.
+          Stop Scanning 6 Apps.{" "}
+          <span className="text-gradient">Start Responding.</span>
         </motion.h1>
 
         <motion.p
@@ -39,7 +40,7 @@ const HeroSection = () => {
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
         >
           Your team wastes 15 hours a week rewriting updates that already exist in Slack, Jira, and Email. Scroll finds them, synthesizes them, and drafts the response.
-          <strong className="text-foreground">You just review</strong> to{" "}
+          <strong className="text-foreground">You just review</strong>
           <strong className="text-foreground">and send.</strong>.
         </motion.p>
 
