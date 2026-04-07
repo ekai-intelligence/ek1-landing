@@ -46,7 +46,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.28 }}
-          className="text-xl md:text-2xl font-semibold mb-12 text-gradient"
+          className="text-xl md:text-2xl font-semibold mb-12 text-primary"
         >
           You just review and send.
         </motion.p>
