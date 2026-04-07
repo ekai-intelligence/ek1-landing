@@ -56,7 +56,7 @@ const HeroSection = () => {
             </a>
           </Button>
           <Button variant="hero-outline" size="xl" asChild>
-            <a href="#demo">See It In Action</a>
+            <a href="/demo/" target="_blank" rel="noopener noreferrer">See It In Action</a>
           </Button>
         </motion.div>
 

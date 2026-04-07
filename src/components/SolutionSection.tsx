@@ -71,7 +71,7 @@ const SolutionSection = () => {
           className="text-center"
         >
           <Button variant="hero" size="xl" asChild>
-            <a href="#demo">
+            <a href="/demo/" target="_blank" rel="noopener noreferrer">
               See It In Action
               <ArrowRight className="ml-1" size={18} />
             </a>

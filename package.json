@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "sync-demo": "cd ../scroll-demo && npx vite build && rm -rf ../Action-Inbox/public/demo && cp -r dist ../Action-Inbox/public/demo"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
