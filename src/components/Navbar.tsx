@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/40">
       <div className="container flex h-16 items-center justify-between">
-        <a href="/" aria-label="Action Inbox home">
+        <a href="/" aria-label="Scroll home">
           <Logo size={34} variant="full" />
         </a>
 

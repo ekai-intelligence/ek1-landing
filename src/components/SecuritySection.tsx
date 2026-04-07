@@ -5,7 +5,7 @@ const features = [
   {
     icon: Server,
     title: "In-VPC Deployment",
-    desc: "Action Inbox runs inside your cloud. No data leaves your perimeter—ever. You're not adopting an external tool; you're extending your own infrastructure.",
+    desc: "Scroll runs inside your cloud. No data leaves your perimeter—ever. You're not adopting an external tool; you're extending your own infrastructure.",
   },
   {
     icon: Lock,

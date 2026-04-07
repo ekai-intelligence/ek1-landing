@@ -17,34 +17,18 @@ const Logo = ({ size = 32, className = "", variant = "mark" }: LogoProps) => {
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
       >
-        {/* Warm rounded-square background */}
+        {/* Orange rounded-square background */}
         <rect width="40" height="40" rx="10" fill="hsl(14,90%,58%)" />
 
-        {/* Inbox tray — bottom portion */}
+        {/* Feed line 1 — full width */}
+        <path d="M10 14 H30" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
+        {/* Feed line 2 — full width */}
+        <path d="M10 20 H30" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
+        {/* Feed line 3 — short (last item, truncated) */}
+        <path d="M10 26 H21" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
+        {/* Action chevron — right-pointing, end of last line */}
         <path
-          d="M9 26h5.5l2 3h7l2-3H31"
-          stroke="white"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M9 26V15a1 1 0 0 1 1-1h20a1 1 0 0 1 1 1v11"
-          stroke="white"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-
-        {/* Downward action arrow — "incoming" */}
-        <path
-          d="M20 11v9"
-          stroke="white"
-          strokeWidth="2.2"
-          strokeLinecap="round"
-        />
-        <path
-          d="M16.5 17.5L20 21l3.5-3.5"
+          d="M24 23.5 L28 26 L24 28.5"
           stroke="white"
           strokeWidth="2.2"
           strokeLinecap="round"
@@ -54,9 +38,11 @@ const Logo = ({ size = 32, className = "", variant = "mark" }: LogoProps) => {
 
       {/* Wordmark — only shown in "full" variant */}
       {variant === "full" && (
-        <span className="font-bold text-lg tracking-tight leading-none">
-          <span style={{ color: "hsl(14,90%,58%)" }}>Action</span>
-          <span className="text-foreground"> Inbox</span>
+        <span
+          style={{ color: "hsl(14,90%,58%)" }}
+          className="font-bold text-lg tracking-tight leading-none"
+        >
+          @Scroll
         </span>
       )}
     </span>

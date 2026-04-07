@@ -21,12 +21,12 @@ const CTASection = () => {
           </h2>
 
           <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-            See how Action Inbox can save your team 4+ hours per person per day—deployed securely inside your cloud in under 48 hours.
+            See how Scroll can save your team 4+ hours per person per day—deployed securely inside your cloud in under 48 hours.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="hero" size="xl" asChild>
-              <a href="mailto:demo@actioninbox.com?subject=Demo Request">
+              <a href="mailto:demo@scrollngo.ai?subject=Demo Request">
                 Book a Demo
                 <ArrowRight className="ml-1" size={18} />
               </a>

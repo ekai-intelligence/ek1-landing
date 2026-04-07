@@ -38,10 +38,10 @@
 
     /* Custom tokens */
     --glow: 14 90% 58%;
-    --glow-muted: 14 60% 75%;
+    --glow-muted: 265 40% 75%;
     --surface-elevated: 0 0% 100%;
     --gradient-start: 14 90% 58%;
-    --gradient-end: 350 80% 55%;
+    --gradient-end: 265 75% 60%;
     --text-secondary: 220 10% 50%;
 
     --sidebar-background: 0 0% 100%;

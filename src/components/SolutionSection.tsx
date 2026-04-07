@@ -7,7 +7,7 @@ const steps = [
     icon: Inbox,
     step: "01",
     title: "Neutral Synthesis",
-    desc: "Action Inbox connects to Teams, Outlook, Jira, Salesforce, and more—synthesizing context across every silo into a single proactive inbox.",
+    desc: "Scroll connects to Teams, Outlook, Jira, Salesforce, and more—synthesizing context across every silo into a single proactive inbox.",
   },
   {
     icon: Pen,
@@ -19,7 +19,7 @@ const steps = [
     icon: Send,
     step: "03",
     title: "Secure Write-Back",
-    desc: "Using Model Context Protocol (MCP), Action Inbox updates your systems of record directly. Data never leaves your perimeter.",
+    desc: "Using Model Context Protocol (MCP), Scroll updates your systems of record directly. Data never leaves your perimeter.",
   },
 ];
 
@@ -40,7 +40,7 @@ const SolutionSection = () => {
             From <span className="text-gradient">Context-Gatherer</span> to Context-User
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Action Inbox is the first Sovereign Action Engine. It synthesizes, drafts, and writes back—all inside your private cloud.
+            Scroll is the first Sovereign Action Engine. It synthesizes, drafts, and writes back—all inside your private cloud.
           </p>
         </motion.div>
 
@@ -71,7 +71,7 @@ const SolutionSection = () => {
           className="text-center"
         >
           <Button variant="hero" size="xl" asChild>
-            <a href="/demo/" target="_blank" rel="noopener noreferrer">
+            <a href="/demo/index.html" target="_blank" rel="noopener noreferrer">
               See It In Action
               <ArrowRight className="ml-1" size={18} />
             </a>

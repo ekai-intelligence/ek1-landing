@@ -35,7 +35,7 @@ const OpportunitySection = () => {
             </div>
             <h3 className="text-xl font-bold text-foreground mb-3">The First-Party Advantage</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Because Action Inbox lives In-VPC, we are not an "external tool"—we are an extension of the customer's internal infrastructure. No third-party cloud audits. No security purgatory.
+              Because Scroll lives In-VPC, we are not an "external tool"—we are an extension of the customer's internal infrastructure. No third-party cloud audits. No security purgatory.
             </p>
           </motion.div>
 

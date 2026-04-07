@@ -37,7 +37,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Action Inbox synthesizes your emails, chats, meetings & SaaS tools
+          Scroll synthesizes your emails, chats, meetings & SaaS tools
           into proactive first drafts—deployed inside your private cloud. 
           Move from <strong className="text-foreground">Context-Gatherer</strong> to{" "}
           <strong className="text-foreground">Context-User</strong>.
@@ -56,7 +56,7 @@ const HeroSection = () => {
             </a>
           </Button>
           <Button variant="hero-outline" size="xl" asChild>
-            <a href="/demo/" target="_blank" rel="noopener noreferrer">See It In Action</a>
+            <a href="/demo/index.html" target="_blank" rel="noopener noreferrer">See It In Action</a>
           </Button>
         </motion.div>
 

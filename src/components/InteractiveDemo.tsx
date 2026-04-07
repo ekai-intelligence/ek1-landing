@@ -806,7 +806,7 @@ const InteractiveDemo = () => {
               <div className="h-3 w-3 rounded-full bg-yellow-400" />
               <div className="h-3 w-3 rounded-full bg-green-400" />
               <span className="ml-3 text-sm font-mono text-muted-foreground">
-                Action Inbox
+                Scroll
               </span>
             </div>
             <button
