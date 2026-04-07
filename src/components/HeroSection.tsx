@@ -27,7 +27,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight leading-[1.05] mb-6 text-foreground"
+          className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight leading-[1.05] mb-8 text-foreground"
         >
           Stop Scanning 6 Apps.{" "}
           <span className="text-gradient">Start Responding.</span>
@@ -37,18 +37,25 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed"
         >
           Your team wastes 15 hours a week rewriting updates that already exist in Slack, Jira, and Email. Scroll finds them, synthesizes them, and drafts the response.
-          <strong className="text-foreground">You just review</strong>
-          <strong className="text-foreground">and send.</strong>.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.28 }}
+          className="text-xl md:text-2xl font-semibold mb-12 text-gradient"
+        >
+          You just review and send.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20"
         >
           <Button variant="hero" size="xl" onClick={openWaitlist}>
             Join Waitlist
