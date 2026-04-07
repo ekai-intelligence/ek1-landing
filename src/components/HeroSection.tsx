@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, Shield, Zap, Brain } from "lucide-react";
+import { useWaitlist } from "@/context/WaitlistContext";
 
 const HeroSection = () => {
+  const { openWaitlist } = useWaitlist();
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Soft warm gradient background */}
@@ -49,11 +51,9 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
         >
-          <Button variant="hero" size="xl" asChild>
-            <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Bp7akyMIraUFtytlgVTAGtZ8heZm7J451cIuYaurqSk2UsPjjKXJA_LaGrXu8zS-gk7Cp7Eir" target="_blank" rel="noopener noreferrer">
-              Book a Demo
-              <ArrowRight className="ml-1" size={18} />
-            </a>
+          <Button variant="hero" size="xl" onClick={openWaitlist}>
+            Join Waitlist
+            <ArrowRight className="ml-1" size={18} />
           </Button>
           <Button variant="hero-outline" size="xl" asChild>
             <a href="/demo/index.html" target="_blank" rel="noopener noreferrer">See It In Action</a>

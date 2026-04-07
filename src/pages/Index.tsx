@@ -10,23 +10,28 @@ import CTASection from "@/components/CTASection";
 import WaitlistSection from "@/components/WaitlistSection";
 import Footer from "@/components/Footer";
 import FloatingNav from "@/components/FloatingNav";
+import { WaitlistProvider } from "@/context/WaitlistContext";
+import WaitlistModal from "@/components/WaitlistModal";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <FloatingNav />
-      <HeroSection />
-      <ThesisSection />
-      <ProblemSection />
-      <InteractiveDemo />
-      <SolutionSection />
-      <SecuritySection />
-      <OpportunitySection />
-      <CTASection />
-      <WaitlistSection />
-      <Footer />
-    </div>
+    <WaitlistProvider>
+      <div className="min-h-screen">
+        <Navbar />
+        <FloatingNav />
+        <HeroSection />
+        <ThesisSection />
+        <ProblemSection />
+        <InteractiveDemo />
+        <SolutionSection />
+        <SecuritySection />
+        <OpportunitySection />
+        <CTASection />
+        <WaitlistSection />
+        <Footer />
+      </div>
+      <WaitlistModal />
+    </WaitlistProvider>
   );
 };
 

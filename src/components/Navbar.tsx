@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "@/components/Logo";
+import { useWaitlist } from "@/context/WaitlistContext";
 
 const navLinks = [
   { label: "Problem", href: "#problem" },
@@ -11,10 +12,9 @@ const navLinks = [
   { label: "Why Now", href: "#opportunity" },
 ];
 
-const DEMO_URL = "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Bp7akyMIraUFtytlgVTAGtZ8heZm7J451cIuYaurqSk2UsPjjKXJA_LaGrXu8zS-gk7Cp7Eir";
-
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const { openWaitlist } = useWaitlist();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/40">
@@ -36,8 +36,8 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <Button variant="hero" size="default" asChild>
-            <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">Book a Demo</a>
+          <Button variant="hero" size="default" onClick={openWaitlist}>
+            Join Waitlist
           </Button>
         </div>
 
@@ -65,8 +65,8 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="hero" size="lg" asChild>
-                <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">Book a Demo</a>
+              <Button variant="hero" size="lg" onClick={() => { openWaitlist(); setOpen(false); }}>
+                Join Waitlist
               </Button>
             </div>
           </motion.div>
