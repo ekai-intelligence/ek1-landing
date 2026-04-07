@@ -19,7 +19,7 @@ const HeroSection = () => {
         >
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-xs font-mono text-muted-foreground tracking-wider uppercase card-shadow">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Sovereign AI · In-VPC Deployment
+            ZERO DATA LEAKAGE · Your CLOUD, Your DATA.
           </span>
         </motion.div>
 
@@ -29,8 +29,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight leading-[1.05] mb-6 text-foreground"
         >
-          Don't #Slack...{" "}
-          <span className="text-gradient">@Scroll</span> Instead.
+          Stop Scanning 6 Apps{" "}. Start Responding.
         </motion.h1>
 
         <motion.p
@@ -39,10 +38,9 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Scroll synthesizes your emails, chats, meetings & SaaS tools
-          into proactive first drafts—deployed inside your private cloud.
-          Move from <strong className="text-foreground">Context-Gatherer</strong> to{" "}
-          <strong className="text-foreground">Context-User</strong>.
+          Your team wastes 15 hours a week rewriting updates that already exist in Slack, Jira, and Email. Scroll finds them, synthesizes them, and drafts the response.
+          <strong className="text-foreground">You just review</strong> to{" "}
+          <strong className="text-foreground">and send.</strong>.
         </motion.p>
 
         <motion.div
@@ -67,9 +65,9 @@ const HeroSection = () => {
           className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto"
         >
           {[
-            { icon: Brain, label: "Neutral Brain", desc: "Cross-silo synthesis" },
-            { icon: Shield, label: "In-VPC", desc: "Your cloud, your data" },
-            { icon: Zap, label: "Write-Back", desc: "Updates tools directly" },
+            { icon: Brain, label: "Neutral Brain", desc: "Cross-platform synthesis" },
+            { icon: Shield, label: "In-VPC", desc: "Your VPC, Zero Data Leakage" },
+            { icon: Zap, label: "Write-Back", desc: "Review & Send in Seconds." },
           ].map((item) => (
             <div
               key={item.label}
