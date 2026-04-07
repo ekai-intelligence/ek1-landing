@@ -27,7 +27,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight leading-[1.05] mb-6 text-foreground"
         >
-          Don't #Scroll{" "}
+          Don't #Slack{" "}
           <span className="text-gradient">@Scroll</span> Instead.
         </motion.h1>
 
