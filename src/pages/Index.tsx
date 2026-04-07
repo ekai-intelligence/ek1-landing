@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import ThesisSection from "@/components/ThesisSection";
 import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
 import InteractiveDemo from "@/components/InteractiveDemo";
@@ -15,6 +16,7 @@ const Index = () => {
       <Navbar />
       <FloatingNav />
       <HeroSection />
+      <ThesisSection />
       <ProblemSection />
       <InteractiveDemo />
       <SolutionSection />
