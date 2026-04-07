@@ -11,7 +11,7 @@ const navLinks = [
   { label: "Why Now", href: "#opportunity" },
 ];
 
-const DEMO_URL = "#book-demo";
+const DEMO_URL = "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Bp7akyMIraUFtytlgVTAGtZ8heZm7J451cIuYaurqSk2UsPjjKXJA_LaGrXu8zS-gk7Cp7Eir";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -37,7 +37,7 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-3">
           <Button variant="hero" size="default" asChild>
-            <a href={DEMO_URL}>Book a Demo</a>
+            <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">Book a Demo</a>
           </Button>
         </div>
 
@@ -66,7 +66,7 @@ const Navbar = () => {
                 </a>
               ))}
               <Button variant="hero" size="lg" asChild>
-                <a href={DEMO_URL}>Book a Demo</a>
+                <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">Book a Demo</a>
               </Button>
             </div>
           </motion.div>

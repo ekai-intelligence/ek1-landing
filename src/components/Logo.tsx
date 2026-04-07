@@ -42,7 +42,7 @@ const Logo = ({ size = 32, className = "", variant = "mark" }: LogoProps) => {
           style={{ color: "hsl(14,90%,58%)" }}
           className="font-bold text-lg tracking-tight leading-none"
         >
-          @Scroll
+          Scroll
         </span>
       )}
     </span>
