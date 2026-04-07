@@ -27,8 +27,8 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight leading-[1.05] mb-6 text-foreground"
         >
-          Never Start from the{" "}
-          <span className="text-gradient">Blank Page</span> Again.
+          Don't #Scroll{" "}
+          <span className="text-gradient">@Scroll</span> Instead.
         </motion.h1>
 
         <motion.p
@@ -38,7 +38,7 @@ const HeroSection = () => {
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
         >
           Scroll synthesizes your emails, chats, meetings & SaaS tools
-          into proactive first drafts—deployed inside your private cloud. 
+          into proactive first drafts—deployed inside your private cloud.
           Move from <strong className="text-foreground">Context-Gatherer</strong> to{" "}
           <strong className="text-foreground">Context-User</strong>.
         </motion.p>
