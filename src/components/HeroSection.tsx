@@ -27,10 +27,10 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight leading-[1.05] mb-8 text-foreground"
+          className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-[1.15] mb-8 text-foreground"
         >
-          Stop Switching Apps to Find What's Urgent.{" "}
-          <span className="text-gradient">Start Getting It Done.</span>
+          Stop Switching Apps to Find What's Urgent.
+          <span className="block text-gradient mt-1">Start Getting It Done.</span>
         </motion.h1>
 
         <motion.p
