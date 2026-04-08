@@ -29,8 +29,8 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight leading-[1.05] mb-8 text-foreground"
         >
-          Stop Scanning 6 Apps.{" "}
-          <span className="text-gradient">Start Responding.</span>
+          Stop Switching Apps to Find What's Urgent.{" "}
+          <span className="text-gradient">Start Getting It Done.</span>
         </motion.h1>
 
         <motion.p
