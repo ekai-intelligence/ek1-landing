@@ -30,16 +30,16 @@ const HeroSection = () => {
           className="font-black tracking-tight leading-snug mb-5 text-foreground"
         >
           <span className="block text-xl sm:text-2xl md:text-3xl">Stop Switching Apps to Find What's Urgent.</span>
-          <span className="block text-3xl sm:text-4xl md:text-[2.75rem] text-gradient mt-2 leading-tight">Start Getting It Done.</span>
+          <span className="block text-3xl sm:text-4xl md:text-[2.75rem] text-gradient mt-2 pb-1">Start Getting It Done.</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-base md:text-lg text-muted-foreground max-w-md mx-auto mb-3 leading-relaxed"
+          className="text-base md:text-lg text-muted-foreground max-w-[420px] mx-auto mb-3 leading-relaxed"
         >
-          One proactive feed with Key Information, Updates, and Decisions—auto-generated from your own context.
+          One proactive feed with Key Information, Updates, and Decisions, auto-generated from your own context.
         </motion.p>
 
         <motion.p
