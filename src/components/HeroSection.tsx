@@ -27,28 +27,28 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-[1.15] mb-8 text-foreground"
+          className="font-black tracking-tight leading-snug mb-5 text-foreground"
         >
-          Stop Switching Apps to Find What's Urgent.
-          <span className="block text-gradient mt-1">Start Getting It Done.</span>
+          <span className="block text-xl sm:text-2xl md:text-3xl">Stop Switching Apps to Find What's Urgent.</span>
+          <span className="block text-3xl sm:text-4xl md:text-[2.75rem] text-gradient mt-2 leading-tight">Start Getting It Done.</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed"
+          className="text-base md:text-lg text-muted-foreground max-w-md mx-auto mb-3 leading-relaxed"
         >
-          Your team wastes 15 hours a week rewriting updates that already exist in Slack, Jira, and Email. Scroll finds them, synthesizes them, and drafts the response.
+          One proactive feed with Key Information, Updates, and Decisions—auto-generated from your own context.
         </motion.p>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.28 }}
-          className="text-xl md:text-2xl font-semibold mb-12 text-primary"
+          className="text-lg md:text-xl font-semibold mb-10 text-primary"
         >
-          You just review and send.
+          Review. Edit. Send.
         </motion.p>
 
         <motion.div
