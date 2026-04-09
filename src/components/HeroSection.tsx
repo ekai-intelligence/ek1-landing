@@ -74,7 +74,7 @@ const HeroSection = () => {
         >
           {[
             { icon: Brain, label: "Neutral Brain", desc: "Cross-platform synthesis" },
-            { icon: Shield, label: "In-VPC", desc: "Your VPC, Zero Data Leakage" },
+            { icon: Shield, label: "In-VPC", desc: "Runs on your cloud" },
             { icon: Zap, label: "Write-Back", desc: "Review & Send in Seconds." },
           ].map((item) => (
             <div

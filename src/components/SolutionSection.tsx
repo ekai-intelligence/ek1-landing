@@ -37,10 +37,10 @@ const SolutionSection = () => {
             The Solution
           </span>
           <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4 text-foreground">
-            From <span className="text-gradient">Context-Gatherer</span> to Context-User
+            From <span className="text-gradient">Doer</span> to Approver
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Scroll is the first Sovereign Action Engine. It synthesizes, drafts, and writes back—all inside your private cloud.
+            Your work ready, before you are. Scroll synthesizes, drafts, and writes back—all inside your private cloud.
           </p>
         </motion.div>
 
