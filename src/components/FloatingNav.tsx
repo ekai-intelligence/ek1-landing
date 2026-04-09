@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Home,
-  Play,
   AlertTriangle,
   Lightbulb,
   Shield,
@@ -13,7 +12,6 @@ import {
 const sections = [
   { id: "hero", icon: Home, label: "Home" },
   { id: "problem", icon: AlertTriangle, label: "Problem" },
-  { id: "demo", icon: Play, label: "Demo" },
   { id: "solution", icon: Lightbulb, label: "Solution" },
   { id: "security", icon: Shield, label: "Security" },
   { id: "opportunity", icon: TrendingUp, label: "Opportunity" },
