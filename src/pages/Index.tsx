@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import IntegrationsBar from "@/components/IntegrationsBar";
@@ -31,6 +32,7 @@ const Index = () => {
         <Footer />
       </div>
       <WaitlistModal />
+      <Analytics />
     </WaitlistProvider>
   );
 };
