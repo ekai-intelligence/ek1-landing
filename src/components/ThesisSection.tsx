@@ -117,7 +117,7 @@ const ThesisSection = () => {
               className="mt-4 ml-4 bg-yellow-50 border border-yellow-200 rounded-sm p-4 font-mono text-xs text-yellow-900 leading-relaxed shadow-sm"
               style={{ transform: "rotate(-1.5deg)" }}
             >
-              "Cognitive load drops the moment information comes <em>to</em> you. That's not a product feature — that's neuroscience."
+              "Cognitive load drops the moment information comes <em>to</em> you. We're not making it up — that's neuroscience."
             </motion.div>
           </motion.div>
 
@@ -159,9 +159,7 @@ const ThesisSection = () => {
               transition={{ delay: 0.5 }}
               className="mt-2 pl-5 border-l-2 border-primary/40 font-mono text-sm text-muted-foreground italic leading-relaxed"
             >
-              "The synthesis tax is not a productivity problem. It's a product problem.
-              <br />
-              Scroll is the fix."
+              "The synthesis tax is caused by modern work culture, it's not a productivity problem. Scroll is the fix."
             </motion.blockquote>
           </div>
         </div>
