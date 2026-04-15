@@ -34,8 +34,8 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="font-black tracking-tight leading-snug mb-5 text-foreground"
             >
-              <span className="block text-xl sm:text-2xl lg:text-[1.6rem] whitespace-nowrap">Stop Switching Apps to Find What's Urgent.</span>
-              <span className="block text-3xl sm:text-4xl lg:text-[2.6rem] text-gradient mt-1.5 pb-1 whitespace-nowrap">Start Getting It Done.</span>
+              <span className="block text-xl sm:text-2xl lg:text-[1.6rem] whitespace-nowrap">9 tools. 100s of messages.</span>
+              <span className="block text-3xl sm:text-4xl lg:text-[2.6rem] text-gradient mt-1.5 pb-1 whitespace-nowrap">One feed that handles all of it.</span>
             </motion.h1>
 
             <motion.p
@@ -44,7 +44,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-base md:text-lg text-muted-foreground max-w-[420px] mx-auto lg:mx-0 mb-3 leading-relaxed"
             >
-              One proactive feed with Key Information, Updates, and Decisions, auto-generated from your own context.
+              Scroll's proactive feed cuts through the noise, drafts the response, surfaces only what needs a human decision and runs entirely inside your own cloud.
             </motion.p>
 
             <motion.p
