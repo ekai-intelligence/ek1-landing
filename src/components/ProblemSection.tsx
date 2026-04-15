@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { AlertTriangle, Clock, ShieldAlert, Copy } from "lucide-react";
 
 const stats = [
-  { value: "60%", label: "of the workday lost to app-toggling" },
-  { value: "70+", label: "siloed apps per enterprise" },
-  { value: "$100K+", label: "per year wasted on manual synthesis" },
+  { value: "3x", label: "your team's output without hiring a single person" },
+  { value: "One feed", label: "instead of 9 tools fighting for attention" },
+  { value: "$100K+ back", label: "in team's hours every year" },
 ];
 
 const painPoints = [
@@ -40,14 +40,15 @@ const ProblemSection = () => {
             The Problem
           </span>
           <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4 text-foreground">
-            Modern Work is <span className="text-gradient">Broken</span>
+            Your team didn't sign up to be <span className="text-gradient">human middleware.</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            You've been reduced to human middleware—toggling between apps, copying data, and praying nothing falls through the cracks.
+            Your tools were onboarded to help your team. Somehow your team ended up working for them.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
+        {/* Single grid — each column owns its stat + explanation card, so they stay paired on every breakpoint */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
@@ -55,29 +56,22 @@ const ProblemSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="text-center rounded-2xl border border-border/60 bg-card py-8 px-6 card-shadow"
+              className="flex flex-col gap-4"
             >
-              <p className="text-4xl md:text-5xl font-black text-gradient mb-2">{stat.value}</p>
-              <p className="text-sm text-muted-foreground">{stat.label}</p>
-            </motion.div>
-          ))}
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {painPoints.map((point, i) => (
-            <motion.div
-              key={point.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="rounded-2xl border border-border/60 bg-card p-6 card-shadow"
-            >
-              <div className="h-10 w-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                <point.icon className="text-primary" size={20} />
+              {/* Stat */}
+              <div className="text-center rounded-2xl border border-border/60 bg-card py-8 px-6 card-shadow">
+                <p className="text-4xl md:text-5xl font-black text-gradient mb-2">{stat.value}</p>
+                <p className="text-sm text-muted-foreground">{stat.label}</p>
               </div>
-              <h3 className="text-lg font-bold text-foreground mb-2">{point.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{point.desc}</p>
+
+              {/* Paired explanation card */}
+              <div className="rounded-2xl border border-border/60 bg-card p-6 card-shadow flex-1">
+                <div className="h-10 w-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  {(() => { const Icon = painPoints[i].icon; return <Icon className="text-primary" size={20} />; })()}
+                </div>
+                <h3 className="text-lg font-bold text-foreground mb-2">{painPoints[i].title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{painPoints[i].desc}</p>
+              </div>
             </motion.div>
           ))}
         </div>
