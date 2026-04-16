@@ -44,7 +44,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-base md:text-lg text-muted-foreground max-w-[420px] mx-auto lg:mx-0 mb-3 leading-relaxed"
             >
-              Scroll's proactive feed surfaces what matters, prepares every action, you approve to get it done.
+              Scroll's Proactive Feed surfaces what matters, prepares every action and you approve to get it done.
             </motion.p>
 
             <motion.p
