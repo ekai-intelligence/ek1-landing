@@ -3,8 +3,8 @@ import { AlertTriangle, Clock, ShieldAlert, Copy } from "lucide-react";
 
 const stats = [
   { value: "3x", label: "your team's output without hiring a single person" },
-  { value: "One feed", label: "instead of 9 tools fighting for attention" },
-  { value: "$100K+ back", label: "in team's hours every year" },
+  { value: "1 feed", label: "instead of 9 tools fighting for attention" },
+  { value: "$4.5M", label: "average cost of an enterprise data breach" },
 ];
 
 const painPoints = [
@@ -14,15 +14,15 @@ const painPoints = [
     desc: "Workers spend hours copy-pasting between Slack, Jira, Salesforce, and spreadsheets just to answer one question.",
   },
   {
-    icon: ShieldAlert,
-    title: "Shadow AI Crisis",
-    desc: "Employees leak company secrets into public AI models just to survive their workload. Your IP is already at risk.",
-  },
-  {
     icon: Clock,
     title: "The Synthesis Gap",
     desc: "Project Managers spend 4+ hours daily translating Slack chatter into ticket updates. Sales ops manually merge emails with CRM records.",
   },
+  {
+    icon: ShieldAlert,
+    title: "Shadow AI Crisis",
+    desc: "Employees leak company secrets into public AI models just to survive their workload. Your IP is already at risk.",
+  }
 ];
 
 const ProblemSection = () => {
@@ -37,13 +37,15 @@ const ProblemSection = () => {
         >
           <span className="inline-flex items-center gap-2 text-xs font-mono text-primary uppercase tracking-wider mb-4">
             <AlertTriangle size={14} />
-            The Problem
+            The ROI
           </span>
           <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4 text-foreground">
-            Your team didn't sign up to be <span className="text-gradient">human middleware.</span>
+            Your team didn't sign up to be<br />
+            <span className="text-gradient">human middleware.</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Your tools were onboarded to help your team. Somehow your team ended up working for them.
+            Your tools were onboarded to help your team.<br />
+            Somehow your team ended up working for them.
           </p>
         </motion.div>
 
@@ -59,8 +61,8 @@ const ProblemSection = () => {
               className="flex flex-col gap-4"
             >
               {/* Stat */}
-              <div className="text-center rounded-2xl border border-border/60 bg-card py-8 px-6 card-shadow">
-                <p className="text-4xl md:text-5xl font-black text-gradient mb-2">{stat.value}</p>
+              <div className="text-center rounded-2xl border border-border/60 bg-card px-6 card-shadow h-[168px] flex flex-col items-center justify-center">
+                <p className="text-3xl md:text-4xl font-black text-gradient mb-2">{stat.value}</p>
                 <p className="text-sm text-muted-foreground">{stat.label}</p>
               </div>
 

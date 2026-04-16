@@ -34,7 +34,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="font-black tracking-tight leading-snug mb-5 text-foreground"
             >
-              <span className="block text-xl sm:text-2xl lg:text-[1.6rem] whitespace-nowrap">9 tools. 100's of messages.</span>
+              <span className="block text-xl sm:text-2xl lg:text-[1.6rem] whitespace-nowrap">10+ tools. 100's of messages.</span>
               <span className="block text-3xl sm:text-4xl lg:text-[2.6rem] text-gradient mt-1.5 pb-1 whitespace-nowrap">One feed to handle all.</span>
             </motion.h1>
 
