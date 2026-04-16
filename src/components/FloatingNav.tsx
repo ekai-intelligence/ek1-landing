@@ -15,7 +15,7 @@ const sections = [
   { id: "solution", icon: Lightbulb, label: "Solution" },
   { id: "security", icon: Shield, label: "Security" },
   { id: "opportunity", icon: TrendingUp, label: "Opportunity" },
-  { id: "book-demo", icon: PhoneCall, label: "Book Demo" },
+  { id: "cta", icon: PhoneCall, label: "Early Access" },
 ];
 
 const FloatingNav = () => {
@@ -77,11 +77,10 @@ const FloatingNav = () => {
               onClick={() => scrollTo(id)}
               onMouseEnter={() => setHoveredId(id)}
               onMouseLeave={() => setHoveredId(null)}
-              className={`h-9 w-9 rounded-full flex items-center justify-center transition-all duration-200 ${
-                isActive
+              className={`h-9 w-9 rounded-full flex items-center justify-center transition-all duration-200 ${isActive
                   ? "bg-primary text-primary-foreground shadow-md scale-110"
                   : "bg-card border border-border/60 text-muted-foreground hover:text-foreground hover:border-primary/40 card-shadow"
-              }`}
+                }`}
             >
               <Icon size={14} />
             </button>

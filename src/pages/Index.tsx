@@ -8,7 +8,6 @@ import SolutionSection from "@/components/SolutionSection";
 import SecuritySection from "@/components/SecuritySection";
 import OpportunitySection from "@/components/OpportunitySection";
 import CTASection from "@/components/CTASection";
-import WaitlistSection from "@/components/WaitlistSection";
 import Footer from "@/components/Footer";
 import FloatingNav from "@/components/FloatingNav";
 import { WaitlistProvider } from "@/context/WaitlistContext";
@@ -28,7 +27,6 @@ const Index = () => {
         <SecuritySection />
         <OpportunitySection />
         <CTASection />
-        <WaitlistSection />
         <Footer />
       </div>
       <WaitlistModal />

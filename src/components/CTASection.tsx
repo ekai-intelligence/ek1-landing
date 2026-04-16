@@ -1,45 +1,89 @@
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar } from "lucide-react";
+import { useWaitlist } from "@/context/WaitlistContext";
 
 const CTASection = () => {
+  const { openWaitlist } = useWaitlist();
+
   return (
-    <section id="book-demo" className="relative py-24 md:py-32">
-      <div className="container relative max-w-3xl text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          <div className="h-16 w-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-8">
-            <Calendar className="text-primary" size={28} />
-          </div>
+    <>
+      {/* ── Bridge connector ── */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        className="flex items-center gap-4 px-6 md:px-16 py-8 max-w-3xl mx-auto"
+      >
+        <div className="flex-1 h-px bg-border/50" />
+        <p className="text-xs text-primary italic tracking-wide text-center whitespace-nowrap">
+          The window is open. Here's how to get through it first.
+        </p>
+        <div className="flex-1 h-px bg-border/50" />
+      </motion.div>
 
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4 text-foreground">
-            Ready to End the{" "}
-            <span className="text-gradient">Synthesis Gap?</span>
-          </h2>
+      {/* ── Dark CTA section ── */}
+      <section id="cta" className="relative bg-foreground py-20 md:py-28">
+        <div className="container max-w-3xl">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-center flex flex-col items-center gap-5"
+          >
+            {/* Status pill */}
+            <div className="inline-flex items-center gap-2 rounded-full bg-white/[0.07] border border-white/10 px-4 py-1.5">
+              <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
+              <span className="text-xs text-white/60 font-mono tracking-wide">
+                Early access open — limited spots available
+              </span>
+            </div>
 
-          <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-            See how Scroll can save your team 4+ hours per person per day—deployed securely inside your cloud in under 48 hours.
-          </p>
+            {/* Badge */}
+            <span className="inline-flex items-center gap-2 text-xs font-mono text-primary uppercase tracking-wider">
+              <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+              Get Early Access
+            </span>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="hero" size="xl" asChild>
-              <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Bp7akyMIraUFtytlgVTAGtZ8heZm7J451cIuYaurqSk2UsPjjKXJA_LaGrXu8zS-gk7Cp7Eir" target="_blank" rel="noopener noreferrer">
-                Book a Demo
-                <ArrowRight className="ml-1" size={18} />
-              </a>
+            {/* Headline */}
+            <h2 className="text-3xl md:text-5xl font-black tracking-tight leading-tight text-white">
+              Give your team their day back.<br />
+              <span className="text-gradient">Starting this week.</span>
+            </h2>
+
+            {/* Subheadline */}
+            <p className="text-white/55 text-base md:text-lg max-w-md leading-relaxed">
+              Scroll deploys inside your own cloud in under 48 hours. Your team gets
+              a proactive feed that handles the work before they even open a tab.
+            </p>
+
+            {/* Stat pill */}
+            <div className="inline-flex items-center gap-2 rounded-full bg-white/[0.07] border border-white/10 px-5 py-2">
+              <span className="text-sm font-bold text-white">4+ hours</span>
+              <span className="text-sm text-white/50">saved per person, per day</span>
+            </div>
+
+            {/* CTA button */}
+            <Button
+              size="xl"
+              onClick={openWaitlist}
+              className="mt-2 rounded-full bg-white/10 border border-white/20 text-white hover:bg-white/20 transition-colors"
+            >
+              Join the waitlist
+              <ArrowRight className="ml-1" size={17} />
             </Button>
-          </div>
 
-          <p className="text-xs text-muted-foreground mt-6">
-            No credit card required · In-VPC deployment · Enterprise-grade security
-          </p>
-        </motion.div>
-      </div>
-    </section>
+            {/* Disclaimer */}
+            <p className="text-xs text-white/30 tracking-wide">
+              No credit card required · Runs inside your own cloud · Your data never leaves your walls
+            </p>
+          </motion.div>
+        </div>
+      </section>
+    </>
   );
+
 };
 
 export default CTASection;
