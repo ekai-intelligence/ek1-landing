@@ -34,8 +34,8 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="font-black tracking-tight leading-snug mb-5 text-foreground"
             >
-              <span className="block text-xl sm:text-2xl lg:text-[1.6rem] whitespace-nowrap">10+ tools. 100's of messages.</span>
-              <span className="block text-3xl sm:text-4xl lg:text-[2.6rem] text-gradient mt-1.5 pb-1 whitespace-nowrap">One feed to handle all.</span>
+              <span className="block text-xl sm:text-2xl lg:text-[1.6rem] whitespace-nowrap">Too much noise. Not enough signal.</span>
+              <span className="block text-3xl sm:text-4xl lg:text-[2.6rem] text-gradient mt-1.5 pb-1 whitespace-nowrap">One feed to handle all of it.</span>
             </motion.h1>
 
             <motion.p
@@ -44,7 +44,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-base md:text-lg text-muted-foreground max-w-[420px] mx-auto lg:mx-0 mb-3 leading-relaxed"
             >
-              Scroll's Proactive Feed surfaces what matters, prepares every action and you approve to get it done.
+              One proactive feed that reads across every tool, prepares every action, and gets it done inside your own cloud.
             </motion.p>
 
             <motion.p
@@ -79,7 +79,7 @@ const HeroSection = () => {
               {[
                 { icon: Brain, label: "Neutral Brain", desc: "Cross-platform" },
                 { icon: Shield, label: "In-VPC", desc: "Your cloud" },
-                { icon: Zap, label: "Write-Back", desc: "Seconds to send" },
+                { icon: Zap, label: "Write-Back", desc: "Act in Seconds" },
               ].map((item) => (
                 <div
                   key={item.label}
