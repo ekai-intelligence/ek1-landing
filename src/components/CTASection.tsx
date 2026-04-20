@@ -24,7 +24,7 @@ const CTASection = () => {
 
       {/* ── Dark CTA section ── */}
       <section id="cta" className="relative bg-foreground py-20 md:py-28">
-        <div className="container max-w-3xl">
+        <div className="container max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -60,8 +60,8 @@ const CTASection = () => {
 
             {/* Stat pill */}
             <div className="inline-flex items-center gap-2 rounded-full bg-white/[0.07] border border-white/10 px-5 py-2">
-              <span className="text-sm font-bold text-white">4+ hours</span>
-              <span className="text-sm text-white/50">saved per person, per day</span>
+              <span className="text-sm font-bold text-white">3x team productivity</span>
+              <span className="text-sm text-white/50">Same headcount.</span>
             </div>
 
             {/* CTA button */}

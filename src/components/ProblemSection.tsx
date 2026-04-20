@@ -24,7 +24,7 @@ const problems = [
 const ProblemSection = () => {
   return (
     <section id="problem" className="relative py-24 md:py-32">
-      <div className="container max-w-4xl">
+      <div className="container max-w-5xl">
 
         {/* ── Header ── */}
         <motion.div
@@ -37,13 +37,12 @@ const ProblemSection = () => {
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
             The Hidden Cost
           </span>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4 text-foreground leading-tight">
-            Your tools were hired to help your team.{" "}
+          <h2 className="text-2xl md:text-4xl font-black tracking-tight mb-4 text-foreground leading-tight">
+            Your tools were hired to help your team.<br />
             <span className="text-gradient">Your team ended up working for them.</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Every app added another inbox. Another tab.{" "}
-            <br className="hidden sm:block" />
+          <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+            Every app added another inbox. Another tab.<br />
             Another thing to check before anything gets done.
           </p>
         </motion.div>
