@@ -1,0 +1,47 @@
+# Scroll — The Sovereign Action Engine
+
+## What is Scroll?
+
+Scroll is an enterprise AI productivity platform that synthesizes emails, Slack messages, meetings, Jira tickets, Confluence docs, and other SaaS tools into proactive, context-aware first drafts — all deployed inside your private cloud with zero data leakage.
+
+It surfaces the most urgent items across all your tools into a single proactive feed, auto-generates draft responses and actions, and lets you review, edit, and send — without switching apps.
+
+## Core Value Proposition
+
+- **Zero Data Leakage**: Runs entirely inside your own cloud (VPC). Your data never leaves your infrastructure.
+- **Neutral Brain**: No vendor lock-in. Works across all your existing enterprise tools.
+- **Write-Back in Seconds**: AI drafts replies and actions directly into Slack, email, Jira, etc.
+
+## Key Features
+
+- Proactive feed: surfaces urgent items, key information, updates, and decisions from all connected tools
+- Context-aware AI: synthesizes across Slack, email, calendar, Jira, Confluence, Zoom, Notion, Google Drive, OneDrive, and more
+- Auto-generated draft responses with one-click send or edit
+- In-VPC deployment: no SaaS data sharing, passes enterprise security reviews
+- Supports 12+ integrations: Slack, Microsoft Teams, Gmail, Outlook, Zoom, Jira, Confluence, Notion, Google Meet, Google Drive, OneDrive, Google Calendar
+
+## Page Sections
+
+1. **Hero** — Headline: "Stop Switching Apps to Find What's Urgent. Start Getting It Done." Interactive mobile demo showing the proactive feed in action.
+2. **Integrations** — Horizontal marquee of supported tools: Slack, Teams, Gmail, Outlook, Zoom, Jira, Confluence, Notion, Google Meet, Google Drive, OneDrive, Google Calendar.
+3. **Thesis** — "Humans are foragers, not librarians." 200,000 years of evolution didn't wire humans to manage inboxes. The human brain pattern-matches on foraging, not filing.
+4. **Problem** — Enterprise workers spend 4+ hours/day triaging tools. The average worker uses 9+ apps. Context switching costs 40% of productive time.
+5. **Solution** — Scroll's Sovereign Action Engine: synthesize context → generate draft → write back. All inside your private cloud.
+6. **Security** — In-VPC deployment model, no data leaves your infrastructure, enterprise-grade access controls, audit logs.
+7. **Why Now** — AI capability inflection point meets enterprise data sovereignty requirements.
+8. **CTA / Waitlist** — Early access waitlist. Target audience: enterprise teams, CTOs, heads of engineering and operations.
+
+## Target Audience
+
+Enterprise teams (50–5000 employees), CTOs, VPs of Engineering, Heads of Operations, and knowledge workers drowning in tool overload.
+
+## Company
+
+- Website: https://ek1.ai
+- Product: Scroll (by Ekai Intelligence)
+- Stage: Early access / waitlist
+- Deployment: Private cloud / on-premise (no public SaaS)
+
+## Contact
+
+Request early access at https://ek1.ai (Join Waitlist button).
