@@ -33,7 +33,7 @@ export default function Hero() {
             <div className="flex flex-col gap-8">
               <motion.div variants={fadeUp}>
                 <div className="inline-flex items-center gap-2.5 border border-border rounded-pill px-4 py-2 bg-cream whitespace-nowrap">
-                  {['Zero Data Leakage', 'Deployed in your CLOUD', 'Custom Agents'].map((item, i) => (
+                  {['No Data Leakage', 'Predictable Cost', 'Full Control'].map((item, i) => (
                     <div key={item} className="flex items-center gap-2.5">
                       {i === 0
                         ? <span className="w-1.5 h-1.5 rounded-full bg-orange flex-shrink-0" />
@@ -49,17 +49,17 @@ export default function Hero() {
                 className="font-black text-ink leading-[1.05] tracking-[-0.035em] whitespace-nowrap"
                 style={{ fontSize: 'clamp(24px, 3.5vw, 46px)' }}
               >
-                Private AI Stack for
+                Use AI where it matters,
                 <br />
-                <span className="text-orange">Financial Services</span>
+                not just where it&apos;s allowed.
               </motion.h1>
 
               <motion.p variants={fadeUp} className="text-ink text-xl font-semibold leading-snug max-w-[480px] tracking-[-0.02em]">
-                Supercharge your team&apos;s AI adoption without compromising your client&apos;s data.
+                <span className="text-orange">Private AI stack for financial services, deployed in your cloud.</span>
               </motion.p>
 
               <motion.p variants={fadeUp} className="text-muted text-base leading-relaxed max-w-[440px] tracking-[-0.01em] -mt-4">
-                It runs entirely inside your cloud with ready-to-use financial AI apps, a prompt-based app builder, connected to your internal tools.
+                Unlock AI across sensitive workflows, transactions, and internal systems, without exposing data or losing control.
               </motion.p>
 
               <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-3">
