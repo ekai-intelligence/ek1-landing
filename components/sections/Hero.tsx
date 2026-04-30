@@ -55,8 +55,8 @@ export default function Hero() {
               </motion.h1>
 
               <motion.p variants={fadeUp} className="text-ink text-xl font-semibold leading-snug max-w-[480px] tracking-[-0.02em]">
-                <span className="text-orange">Private AI stack for financial services,
-                  <br /> deployed in your cloud.</span>
+                <span className="text-orange">Private AI for financial services,
+                  <br />deployed in your cloud.</span>
               </motion.p>
 
               <motion.p variants={fadeUp} className="text-muted text-base leading-relaxed max-w-[440px] tracking-[-0.01em] -mt-4">
@@ -87,7 +87,7 @@ export default function Hero() {
           >
             {[
               { value: '1 - click', label: 'Deployment' },
-              { value: 'Unified Context', label: 'across all systems' },
+              { value: 'Unified Data', label: 'across all systems' },
               { value: '3x Output', label: 'per team' },
               { value: 'Audit Ready', label: 'from day one' },
             ].map((stat) => (
