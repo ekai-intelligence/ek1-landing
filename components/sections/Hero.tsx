@@ -46,21 +46,18 @@ export default function Hero() {
 
               <motion.h1
                 variants={fadeUp}
-                className="font-black text-ink leading-[1.05] tracking-[-0.035em] whitespace-nowrap"
-                style={{ fontSize: 'clamp(24px, 3.5vw, 46px)' }}
+                className="font-black text-ink leading-[1.05] tracking-[-0.035em]"
+                style={{ fontSize: 'clamp(26px, 3.2vw, 44px)' }}
               >
-                Use AI where it matters,
-                <br />
-                not just where it&apos;s allowed.
+                Private AI Stack for<br />Financial Services
               </motion.h1>
 
               <motion.p variants={fadeUp} className="text-ink text-xl font-semibold leading-snug max-w-[480px] tracking-[-0.02em]">
-                <span className="text-orange">Private AI for financial services,
-                  <br />deployed in your cloud.</span>
+                <span className="text-orange">Supercharge your team's AI adoption<br />without compromising your client's data.</span>
               </motion.p>
 
-              <motion.p variants={fadeUp} className="text-muted text-base leading-relaxed max-w-[440px] tracking-[-0.01em] -mt-4">
-                Unlock AI across sensitive workflows, transactions, and internal systems, without exposing data or losing control.
+              <motion.p variants={fadeUp} className="text-muted text-base leading-relaxed max-w-[460px] tracking-[-0.01em] -mt-4">
+                It runs entirely inside your cloud with ready-to-use financial AI apps, a prompt-based app builder, connected to your internal tools.
               </motion.p>
 
               <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-3">
