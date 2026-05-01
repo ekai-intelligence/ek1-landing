@@ -81,7 +81,7 @@ export default function HeroVisual() {
               Contract Review
             </p>
             <p style={{ fontSize: 11, color: INK, lineHeight: 1.55 }}>
-              Review the Blackrock Capital NDA and flag any non-standard liability terms before Tuesday's signing.
+              Review the Blackrock Capital NDA and flag any non-standard liability terms before Tuesday&apos;s signing.
             </p>
           </div>
 
