@@ -66,7 +66,7 @@ export default function Integrations() {
 
           <motion.div variants={fadeUp}>
             <p className="text-[13px] text-muted">
-              More integrations shipping throughout 2025.{' '}
+              More integrations shipping throughout 2026.{' '}
               <a
                 href="#cta"
                 className="text-ink font-semibold hover:text-orange transition-colors duration-150 no-underline"

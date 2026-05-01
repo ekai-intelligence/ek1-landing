@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
 import Label from '@/components/ui/Label'
 import Rule from '@/components/ui/Rule'
 import { fadeUp, staggerContainer, viewportConfig } from '@/lib/animations'
@@ -84,19 +83,6 @@ export default function AppsShowcase() {
                   <h3 className="font-bold text-ink text-[18px] tracking-[-0.02em]">{app.name}</h3>
                   <p className="text-muted text-[14px] leading-relaxed">{app.description}</p>
                 </div>
-
-                <ul className="flex flex-col gap-1.5">
-                  {app.features.map((f) => (
-                    <li key={f} className="flex items-center gap-2 text-[13px] text-muted">
-                      <span className="w-1 h-1 rounded-full bg-orange flex-shrink-0" />
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-
-                <span className="mt-auto flex items-center gap-1.5 text-[13px] font-semibold text-ink group-hover:text-orange transition-colors duration-150">
-                  Explore {app.name} <ArrowRight size={13} />
-                </span>
               </motion.a>
             ))}
           </motion.div>

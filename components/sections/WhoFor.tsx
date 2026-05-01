@@ -34,18 +34,16 @@ export default function WhoFor() {
               className="flex flex-col gap-6 py-8 md:pr-16 md:border-r border-b md:border-b-0 border-border"
             >
               <p className="text-[11px] font-semibold uppercase tracking-[0.1em] text-muted-light">
-                Who we are building for
+                Who we build for
               </p>
               <p
                 className="font-bold text-ink leading-[1.2] tracking-[-0.02em]"
                 style={{ fontSize: 'clamp(20px, 2.5vw, 28px)' }}
               >
-                CIOs, CTOs, and IT leaders at small and medium enterprises ready to adopt AI without
-                the liability.
+                CIOs, CTOs, and IT leaders at regulated enterprises ready to adopt AI without the liability.
               </p>
               <p className="text-muted text-[15px] leading-relaxed">
-                Teams of 100 to 5,000 people. Privacy-sensitive industries where getting AI wrong
-                is not an option.
+                Privacy-sensitive industries where getting AI wrong is not an option.
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
                 {industries.map((ind) => (
@@ -59,29 +57,32 @@ export default function WhoFor() {
               </div>
             </motion.div>
 
-            {/* The bigger play */}
+            {/* What they get */}
             <motion.div
               variants={fadeUp}
               className="flex flex-col gap-6 py-8 md:pl-16"
             >
               <p className="text-[11px] font-semibold uppercase tracking-[0.1em] text-muted-light">
-                The bigger play
+                What they get
               </p>
               <p
                 className="font-bold text-ink leading-[1.2] tracking-[-0.02em]"
                 style={{ fontSize: 'clamp(20px, 2.5vw, 28px)' }}
               >
-                A marketplace where teams build and deploy AI apps certified for enterprise compliance
-                out of the box.
+                A private AI stack that works on day one — no months-long implementation, no data leaving the building.
               </p>
-              <p className="text-muted text-[15px] leading-relaxed">
-                Internal teams and third-party developers build on ekai. Enterprises get a growing
-                catalog of workflow-specific apps they cannot find on Claude, Copilot, or anywhere
-                else.
-              </p>
-              <p className="font-bold text-ink text-[17px] tracking-[-0.02em]">
-                That catalog becomes the moat.
-              </p>
+              <div className="flex flex-col gap-3 pt-2">
+                {[
+                  'Deployed inside your own cloud in under 48 hours',
+                  'Four ready-to-use apps for the workflows that matter most',
+                  'Full audit trail — every AI interaction logged and searchable',
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <span className="w-1 h-1 rounded-full bg-orange flex-shrink-0 mt-2" />
+                    <p className="text-muted text-[15px] leading-relaxed">{item}</p>
+                  </div>
+                ))}
+              </div>
             </motion.div>
           </div>
         </motion.div>

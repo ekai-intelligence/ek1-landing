@@ -4,8 +4,8 @@ import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import Button from '@/components/ui/Button'
 import Rule from '@/components/ui/Rule'
-import HeroCarousel from '@/components/sections/HeroCarousel'
-import { fadeUp, staggerContainer, viewportConfig } from '@/lib/animations'
+import HeroVisual from '@/components/sections/HeroVisual'
+import { fadeUp, staggerContainer } from '@/lib/animations'
 
 export default function Hero() {
   return (
@@ -31,19 +31,6 @@ export default function Hero() {
 
             {/* Left: copy */}
             <div className="flex flex-col gap-8">
-              <motion.div variants={fadeUp}>
-                <div className="inline-flex items-center gap-2.5 border border-border rounded-pill px-4 py-2 bg-cream whitespace-nowrap">
-                  {['No Data Leakage', 'Predictable Cost', 'Full Control'].map((item, i) => (
-                    <div key={item} className="flex items-center gap-2.5">
-                      {i === 0
-                        ? <span className="w-1.5 h-1.5 rounded-full bg-orange flex-shrink-0" />
-                        : <span className="w-1 h-1 rounded-full bg-orange flex-shrink-0" />}
-                      <span className="text-[10px] font-semibold uppercase tracking-[0.08em] text-muted">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-
               <motion.h1
                 variants={fadeUp}
                 className="font-black text-ink leading-[1.05] tracking-[-0.035em] whitespace-nowrap"
@@ -71,41 +58,11 @@ export default function Hero() {
               </motion.div>
             </div>
 
-            {/* Right: laptop product carousel */}
+            {/* Right: product visual */}
             <motion.div variants={fadeUp} className="hidden lg:block">
-              <HeroCarousel />
+              <HeroVisual />
             </motion.div>
           </div>
-
-          {/* Stats strip */}
-          <motion.div
-            variants={staggerContainer}
-            initial="initial"
-            whileInView="animate"
-            viewport={viewportConfig}
-            className="border-t border-border pt-6 pb-2 flex flex-wrap gap-3"
-          >
-            {[
-              { value: '1 - click', label: 'Deployment' },
-              { value: 'Unified Data', label: 'across all systems' },
-              { value: '3x Output', label: 'per team' },
-              { value: 'Audit Ready', label: 'from day one' },
-            ].map((stat) => (
-              <motion.div
-                key={stat.value}
-                variants={fadeUp}
-                className="flex flex-col gap-1.5 bg-orange/10 rounded-xl px-5 py-4 w-[calc(50%-6px)] md:flex-1"
-              >
-                <span
-                  className="font-black text-orange leading-none tracking-[-0.04em]"
-                  style={{ fontSize: 'clamp(22px, 2.4vw, 32px)' }}
-                >
-                  {stat.value}
-                </span>
-                <span className="text-[12px] text-muted font-medium leading-snug">{stat.label}</span>
-              </motion.div>
-            ))}
-          </motion.div>
 
         </motion.div>
       </div>

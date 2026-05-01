@@ -43,22 +43,6 @@ export default function CTA() {
               Start free trial
             </Button>
           </motion.div>
-
-          <motion.div
-            variants={fadeUp}
-            className="flex flex-wrap items-center gap-x-6 gap-y-2"
-          >
-            {[
-              'No credit card required',
-              'Runs inside your own cloud',
-              'Your data never leaves your walls',
-            ].map((trust) => (
-              <span key={trust} className="flex items-center gap-2 text-[12px] text-muted">
-                <span className="w-1 h-1 rounded-full bg-orange" />
-                {trust}
-              </span>
-            ))}
-          </motion.div>
         </motion.div>
       </div>
       <Rule />

@@ -56,13 +56,6 @@ export default function Problem() {
 
           <Rule />
 
-          {/* Sub-label */}
-          <motion.div variants={fadeUp}>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-muted-light">
-              What is stopping them today
-            </p>
-          </motion.div>
-
           {/* Three friction points */}
           <motion.div
             variants={staggerContainer}
