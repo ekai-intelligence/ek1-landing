@@ -30,11 +30,25 @@ export default function Hero() {
           <div className="py-8 md:py-12 grid grid-cols-1 lg:grid-cols-[1fr_480px] gap-12 lg:gap-20 items-center">
 
             {/* Left: copy */}
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-6">
+              {/* Pill badge */}
+              <motion.div variants={fadeUp}>
+                <div className="inline-flex items-center gap-2.5 border border-border rounded-pill px-4 py-2 bg-cream/80 backdrop-blur-sm whitespace-nowrap">
+                  {['No Data Leakage', 'Predictable Cost', 'Full Control'].map((item, i) => (
+                    <div key={item} className="flex items-center gap-2.5">
+                      {i === 0
+                        ? <span className="w-1.5 h-1.5 rounded-full bg-orange flex-shrink-0" />
+                        : <span className="w-px h-3 bg-border flex-shrink-0" />}
+                      <span className="text-[10px] font-semibold uppercase tracking-[0.08em] text-muted">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+
               <motion.h1
                 variants={fadeUp}
-                className="font-black text-ink leading-[1.0] tracking-[-0.04em] whitespace-nowrap"
-                style={{ fontSize: 'clamp(30px, 4.2vw, 56px)' }}
+                className="font-black text-ink leading-[1.05] tracking-[-0.03em] whitespace-nowrap"
+                style={{ fontSize: 'clamp(22px, 3vw, 40px)' }}
               >
                 Use AI where it matters,
                 <br />
@@ -43,10 +57,11 @@ export default function Hero() {
 
               <motion.p
                 variants={fadeUp}
-                className="font-bold text-orange leading-snug tracking-[-0.025em] max-w-[500px]"
-                style={{ fontSize: 'clamp(18px, 2vw, 26px)' }}
+                className="font-black text-orange leading-[1.1] tracking-[-0.03em] whitespace-nowrap"
+                style={{ fontSize: 'clamp(24px, 3.8vw, 52px)' }}
               >
-                Private AI for financial services —<br />deployed in your cloud.
+                Private AI for financial services,
+                <br />deployed in your cloud.
               </motion.p>
 
               <motion.p variants={fadeUp} className="text-muted leading-relaxed max-w-[460px] -mt-2" style={{ fontSize: '17px' }}>
