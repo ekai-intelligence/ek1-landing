@@ -29,8 +29,9 @@ export default function Navbar() {
     >
       <div className="max-w-content mx-auto px-6 md:px-12 h-[60px] flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className="flex items-center no-underline">
-          <img src="/ekai-logo.svg" alt="ekai" height={22} style={{ height: '22px', width: 'auto' }} />
+        <a href="/" className="flex items-center gap-2 no-underline">
+          <img src="/ekai-icon.svg" alt="ekai" style={{ height: '22px', width: 'auto' }} />
+          <span className="font-extrabold text-[18px] tracking-[-0.04em]" style={{ color: '#54A4A0', lineHeight: 1 }}>ekai</span>
         </a>
 
         {/* Desktop nav */}

@@ -17,8 +17,8 @@ export default function Home() {
         <Hero />
         <Problem />
         <AppsShowcase />
-        <AppBuilder />
         <Integrations />
+        <AppBuilder />
         <WhyNow />
         <WhoFor />
         <CTA />

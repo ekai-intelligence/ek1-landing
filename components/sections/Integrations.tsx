@@ -14,6 +14,8 @@ const integrations = [
   { name: 'JIRA', category: 'Project mgmt' },
   { name: 'GitHub', category: 'Code' },
   { name: 'Notion', category: 'Docs' },
+  { name: 'OneDrive', category: 'Storage' },
+  { name: 'Salesforce', category: 'CRM' },
 ]
 
 export default function Integrations() {
@@ -45,23 +47,22 @@ export default function Integrations() {
             </motion.div>
           </div>
 
-          {/* Integration tiles */}
-          <motion.div
-            variants={staggerContainer}
-            className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-border"
-          >
-            {integrations.map((int) => (
-              <motion.div
-                key={int.name}
-                variants={fadeUp}
-                className="flex flex-col gap-1.5 px-6 py-7 bg-cream hover:bg-white transition-colors duration-150"
-              >
-                <span className="font-bold text-ink text-[15px] tracking-[-0.01em]">{int.name}</span>
-                <span className="text-[11px] text-muted-light uppercase tracking-[0.08em] font-semibold">
-                  {int.category}
-                </span>
-              </motion.div>
-            ))}
+          {/* Horizontal scroll strip */}
+          <motion.div variants={fadeUp} className="overflow-x-auto -mx-6 md:-mx-12 no-scrollbar">
+            <div className="flex gap-3 px-6 md:px-12 pb-1" style={{ width: 'max-content' }}>
+              {integrations.map((int) => (
+                <div
+                  key={int.name}
+                  className="flex flex-col gap-2 border border-border rounded-lg px-6 py-5 bg-cream hover:bg-white transition-colors duration-150 cursor-default"
+                  style={{ minWidth: '148px' }}
+                >
+                  <span className="font-bold text-ink text-[15px] tracking-[-0.01em]">{int.name}</span>
+                  <span className="text-[11px] text-muted uppercase tracking-[0.08em] font-semibold">
+                    {int.category}
+                  </span>
+                </div>
+              ))}
+            </div>
           </motion.div>
 
           <motion.div variants={fadeUp}>

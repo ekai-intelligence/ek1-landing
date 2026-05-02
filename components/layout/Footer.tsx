@@ -11,8 +11,9 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 pb-16">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1 flex flex-col gap-4">
-            <a href="/" className="flex items-center no-underline w-fit">
-              <img src="/ekai-logo.svg" alt="ekai" height={20} style={{ height: '20px', width: 'auto' }} />
+            <a href="/" className="flex items-center gap-2 no-underline w-fit">
+              <img src="/ekai-icon.svg" alt="ekai" style={{ height: '20px', width: 'auto' }} />
+              <span className="font-extrabold text-[17px] tracking-[-0.04em]" style={{ color: '#54A4A0', lineHeight: 1 }}>ekai</span>
             </a>
             <p className="text-muted text-sm leading-relaxed max-w-[200px]">
               Private AI Stack for regulated teams.
