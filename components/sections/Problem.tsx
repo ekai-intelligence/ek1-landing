@@ -8,18 +8,18 @@ import { fadeUp, staggerContainer, viewportConfig } from '@/lib/animations'
 const frictions = [
   {
     num: '01',
-    title: 'Prompts redacted',
-    copy: 'Employees working with sensitive data get their prompts redacted, making AI almost useless for the work that matters most.',
+    title: 'BLOCKED OR EXPOSED',
+    copy: 'Any prompt touching client data, a contract, or a position gets flagged and killed. Or it leaks to a third party server your security team never approved.',
   },
   {
     num: '02',
-    title: 'Scattered context',
-    copy: 'Context is so scattered they spend more time copying and pasting between tools than actually using AI.',
+    title: 'CONTEXT DOESN\'T TRAVEL',
+    copy: 'Your team copy-paste between Bloomberg, your CRM, internal memos, and the AI tool. Every session starts from zero.',
   },
   {
     num: '03',
-    title: 'Rigid tools',
-    copy: 'The tools that exist work to make their platform more useful instead of focusing on the user\'s workflow.',
+    title: 'COST BREAKS AT SCALE',
+    copy: 'Per-seat pricing works for a pilot. The moment you roll AI out to your entire organization, the bill compounds faster than the value does. There is no enterprise model built for how financial teams actually work.',
   },
 ]
 
@@ -44,12 +44,11 @@ export default function Problem() {
                 className="font-bold text-ink leading-[1.2] tracking-[-0.025em]"
                 style={{ fontSize: 'clamp(24px, 3vw, 36px)' }}
               >
-                There is no shortage of AI tools.
-                What enterprises are missing is a safe strategy to adopt them.
+                AI adoption at scale in financial services has three problems:{' '}
+                <span className="text-orange">Compliance. Context. Cost.</span>
               </p>
               <p className="text-muted text-[17px] leading-relaxed max-w-[600px]">
-                Their teams want AI in their daily workflow. But data leakage, loss of control, and
-                cost make it impossible in a regulated environment.
+                Your teams are already using AI on client data. Ungoverned, unvetted, and at a price that becomes unworkable the moment you try to roll it out properly.
               </p>
             </motion.div>
           </div>
@@ -65,11 +64,10 @@ export default function Problem() {
               <motion.div
                 key={item.num}
                 variants={fadeUp}
-                className={`flex flex-col gap-4 py-8 ${
-                  i < frictions.length - 1
-                    ? 'md:pr-10 md:border-r border-b md:border-b-0 border-border'
-                    : ''
-                } ${i > 0 ? 'md:pl-10' : ''}`}
+                className={`flex flex-col gap-4 py-8 ${i < frictions.length - 1
+                  ? 'md:pr-10 md:border-r border-b md:border-b-0 border-border'
+                  : ''
+                  } ${i > 0 ? 'md:pl-10' : ''}`}
               >
                 <div className="flex items-center gap-3">
                   <span className="text-orange font-black text-[13px] tracking-[0.05em]">
