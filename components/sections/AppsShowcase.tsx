@@ -1,36 +1,38 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { Inbox, Mic, Search, PenLine } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 import Label from '@/components/ui/Label'
 import Rule from '@/components/ui/Rule'
 import { fadeUp, staggerContainer, viewportConfig } from '@/lib/animations'
 
-const apps = [
+const apps: { slug: string; name: string; Icon: LucideIcon; description: string; features: string[] }[] = [
   {
     slug: 'action-inbox',
     name: 'Action Inbox',
-    icon: 'AI',
+    Icon: Inbox,
     description: 'Aggregates signals from Slack, email, JIRA, and GitHub. AI prioritizes by urgency so nothing slips through the cracks.',
     features: ['Smart prioritization', 'Multi-source aggregation', 'One-click actions'],
   },
   {
     slug: 'notetaker',
     name: 'Notetaker',
-    icon: 'N',
+    Icon: Mic,
     description: 'Joins your meetings, transcribes privately, extracts action items, and sends summaries to the right people automatically.',
     features: ['Auto-join & record', 'Action item extraction', 'Searchable archive'],
   },
   {
     slug: 'ai-search',
     name: 'AI Search',
-    icon: 'S',
+    Icon: Search,
     description: 'Natural language search across Slack, Confluence, JIRA, Notion, and GitHub — all processed inside your cloud.',
     features: ['Cross-tool search', 'Natural language', 'Source citations'],
   },
   {
     slug: 'drafting',
     name: 'Drafting',
-    icon: 'D',
+    Icon: PenLine,
     description: 'Context-aware AI writing that pulls from your connected tools. Built for regulated teams with compliant tone and template library.',
     features: ['Context-aware drafts', 'Regulatory tone', 'Template library'],
   },
@@ -76,7 +78,7 @@ export default function AppsShowcase() {
               >
                 {/* App icon */}
                 <div className="w-10 h-10 rounded-card border border-border flex items-center justify-center bg-white">
-                  <span className="text-[11px] font-black text-orange leading-none">{app.icon}</span>
+                  <app.Icon size={18} className="text-orange" strokeWidth={2} />
                 </div>
 
                 <div className="flex flex-col gap-2">

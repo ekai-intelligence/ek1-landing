@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     description:
       'A complete private AI stack that runs inside your own cloud. Deploy in 48 hours. No data leaves your walls.',
   },
+  icons: {
+    icon: [{ url: '/ekai-icon.svg', type: 'image/svg+xml' }],
+  },
 }
 
 export default function RootLayout({
