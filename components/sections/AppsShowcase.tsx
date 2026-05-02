@@ -12,7 +12,7 @@ const apps: { slug: string; name: string; Icon: LucideIcon; description: string;
     slug: 'action-inbox',
     name: 'Action Inbox',
     Icon: Inbox,
-    description: 'Aggregates signals from Slack, email, JIRA, and GitHub. AI prioritizes by urgency so nothing slips through the cracks.',
+    description: 'Aggregates signals from Teams, Outlook, JIRA, and GitHub and displays in a prioritized feed, by urgency so nothing slips through the cracks.',
     features: ['Smart prioritization', 'Multi-source aggregation', 'One-click actions'],
   },
   {
@@ -26,14 +26,14 @@ const apps: { slug: string; name: string; Icon: LucideIcon; description: string;
     slug: 'ai-search',
     name: 'AI Search',
     Icon: Search,
-    description: 'Natural language search across Slack, Confluence, JIRA, Notion, and GitHub — all processed inside your cloud.',
+    description: 'Natural language search across Teams, Confluence, JIRA, Outlook, and GitHub, processed within your cloud.',
     features: ['Cross-tool search', 'Natural language', 'Source citations'],
   },
   {
     slug: 'drafting',
-    name: 'Drafting',
+    name: 'Research & Draft',
     Icon: PenLine,
-    description: 'Context-aware AI writing that pulls from your connected tools. Built for regulated teams with compliant tone and template library.',
+    description: 'Context-aware AI reasearch & writing that pulls from your connected tools. Built for regulated teams with compliant tone and template library.',
     features: ['Context-aware drafts', 'Regulatory tone', 'Template library'],
   },
 ]
@@ -59,7 +59,7 @@ export default function AppsShowcase() {
                 className="font-bold text-ink leading-[1.2] tracking-[-0.025em]"
                 style={{ fontSize: 'clamp(24px, 3vw, 36px)' }}
               >
-                Four AI apps, ready on day one.
+                Work essential AI apps, ready on day one.
               </p>
               <p className="text-muted text-[17px] leading-relaxed max-w-[500px]">
                 No setup beyond connecting your tools. Each app runs in your cloud and accesses only what you explicitly permit.

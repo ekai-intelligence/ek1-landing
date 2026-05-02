@@ -69,7 +69,7 @@ export default function Integrations() {
                 Works where your team already works.
               </p>
               <p className="text-muted text-[16px] leading-relaxed max-w-[460px]">
-                Connect the tools your org already uses. ekai reads from them — it never writes data back or shares anything outside your cloud.
+                Seamlessly connects with the tool your team already uses everyday and unifies the context within your cloud.
               </p>
             </motion.div>
           </div>
