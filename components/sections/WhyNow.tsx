@@ -31,11 +31,11 @@ export default function WhyNow() {
                 className="font-bold text-white leading-[1.2] tracking-[-0.025em]"
                 style={{ fontSize: 'clamp(24px, 3vw, 36px)' }}
               >
-                Every week without a safe strategy is a week your competitors pull further ahead.
+                AI adoption is top of mind for most executives and your team wants same. The company leveraging AI right will be the market leader.
               </p>
               <p className="text-white/50 text-[16px] leading-relaxed">
-                And while leadership figures it out, employees are already moving on their own.
-                The question is not whether your team is using AI. It is whether you control how.
+                This creates urgency where many leaders are choosing speed over governance.
+                Or blocking access waiting for a magic solution. Neither solves the problem.
               </p>
             </motion.div>
 

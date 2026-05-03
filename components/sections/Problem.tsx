@@ -44,7 +44,7 @@ export default function Problem() {
                 className="font-bold text-ink leading-[1.2] tracking-[-0.025em]"
                 style={{ fontSize: 'clamp(24px, 3vw, 36px)' }}
               >
-                AI adoption at scale in financial services has three problems:{' '}
+                AI adoption at scale in financial services has 3 problems:{' '}
                 <span className="text-orange">Compliance. Context. Cost.</span>
               </p>
               <p className="text-muted text-[17px] leading-relaxed max-w-[600px]">

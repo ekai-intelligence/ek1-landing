@@ -6,8 +6,7 @@ import Rule from '@/components/ui/Rule'
 import { fadeUp, staggerContainer, viewportConfig } from '@/lib/animations'
 
 const industries = [
-  'Financial services', 'Fintech', 'KYC',
-  'Healthcare', 'Legal', 'Government',
+  'Financial services', 'Fintech', 'KYC', 'Government', "Insurance", "Crypto"
 ]
 
 export default function WhoFor() {
@@ -40,7 +39,7 @@ export default function WhoFor() {
                 className="font-bold text-ink leading-[1.2] tracking-[-0.02em]"
                 style={{ fontSize: 'clamp(20px, 2.5vw, 28px)' }}
               >
-                CIOs, CTOs, and IT leaders at regulated enterprises ready to adopt AI without the liability.
+                Mid-market Firms in Financial services who want to move fast on AI without taking on the liability that comes with it.
               </p>
               <p className="text-muted text-[15px] leading-relaxed">
                 Privacy-sensitive industries where getting AI wrong is not an option.
@@ -69,12 +68,12 @@ export default function WhoFor() {
                 className="font-bold text-ink leading-[1.2] tracking-[-0.02em]"
                 style={{ fontSize: 'clamp(20px, 2.5vw, 28px)' }}
               >
-                A private AI stack that works on day one — no months-long implementation, no data leaving the building.
+                A private AI stack that delivers on day one — no months-long implementation, no data leaving the building.
               </p>
               <div className="flex flex-col gap-3 pt-2">
                 {[
                   'Deployed inside your own cloud in under 48 hours',
-                  'Four ready-to-use apps for the workflows that matter most',
+                  'Ready-to-use essential apps for the workflows that matter most',
                   'Full audit trail — every AI interaction logged and searchable',
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">

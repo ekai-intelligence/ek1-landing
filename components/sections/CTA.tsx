@@ -27,11 +27,11 @@ export default function CTA() {
             className="font-black text-ink leading-[1.05] tracking-[-0.035em]"
             style={{ fontSize: 'clamp(36px, 5vw, 64px)' }}
           >
-            The private AI stack your team will actually use.
+            Private AI stack to supercharge your team's AI Adoption.
           </motion.h2>
 
           <motion.p variants={fadeUp} className="text-muted text-[17px] leading-relaxed max-w-[480px]">
-            Deploy inside your own cloud in under 48 hours. No credit card required. No data on our
+            Deploy inside your own cloud in under 48 hours. No data on our
             servers. Ever.
           </motion.p>
 

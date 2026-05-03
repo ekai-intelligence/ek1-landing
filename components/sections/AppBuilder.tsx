@@ -13,12 +13,12 @@ const steps = [
   {
     num: '02',
     title: 'Connect your data',
-    copy: 'Point the app at the tools and documents it needs: Slack channels, Confluence spaces, JIRA projects. Everything stays private.',
+    copy: 'Point the app at the tools and documents it needs: Teams, One Drive, JIRA, Github. Everything stays private.',
   },
   {
     num: '03',
     title: 'Deploy to your org',
-    copy: 'Publish to your ekai workspace. Your entire team can use the app the same day — no IT ticket, no engineering backlog.',
+    copy: 'Publish to your ekai workspace. Your entire team can use the app the same day - no IT ticket, no engineering backlog.',
   },
 ]
 
@@ -49,14 +49,14 @@ export default function AppBuilder() {
                   className="font-bold text-white leading-[1.15] tracking-[-0.025em]"
                   style={{ fontSize: 'clamp(24px, 3vw, 40px)' }}
                 >
-                  Build and ship AI apps for your entire org.
+                  Build and Deploy AI apps within mins on your cloud.
                 </p>
                 <div className="flex-shrink-0 mt-1">
-                  <AppPill label="Coming Q3 2026" live={false} />
+                  <AppPill label="Coming Soon" live={false} />
                 </div>
               </div>
               <p className="text-white/50 text-[17px] leading-relaxed max-w-[520px]">
-                Every team has workflows too specific for off-the-shelf tools. App Builder lets non-technical leads turn those repeating tasks into production AI apps — without writing a line of code.
+                Every team has workflows too specific for off-the-shelf tools. Our Prompt based app Builder lets everyone turn those repeating tasks into production AI apps.
               </p>
             </motion.div>
           </div>
@@ -88,7 +88,7 @@ export default function AppBuilder() {
           {/* Footer note */}
           <motion.div variants={fadeUp} className="border-t border-white/10 pt-8">
             <p className="text-white/35 text-[13px] leading-relaxed max-w-[520px]">
-              Apps built with App Builder run in the same private cloud as your ekai workspace. They inherit all existing security and compliance controls automatically — no extra configuration.
+              Apps built with App Builder run in the same private cloud as your ekai workspace and have access to your context. They inherit all existing security and compliance controls automatically.
             </p>
           </motion.div>
         </motion.div>
