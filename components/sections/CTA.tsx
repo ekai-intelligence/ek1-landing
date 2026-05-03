@@ -27,7 +27,7 @@ export default function CTA() {
             className="font-black text-ink leading-[1.05] tracking-[-0.035em]"
             style={{ fontSize: 'clamp(36px, 5vw, 64px)' }}
           >
-            Private AI stack to supercharge your team's AI Adoption.
+            Private AI stack to supercharge your team&apos;s AI Adoption.
           </motion.h2>
 
           <motion.p variants={fadeUp} className="text-muted text-[17px] leading-relaxed max-w-[480px]">
