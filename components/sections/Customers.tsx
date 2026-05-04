@@ -5,6 +5,7 @@ const logos = [
   { name: 'Movius', src: '/logos/movius.svg', height: 26 },
   { name: 'Kanny', src: '/logos/kanny.png', height: 34 },
   { name: 'Angusone Staffing', src: '/logos/angusone.png', height: 40 },
+  { name: 'WealthyMinds AI', src: '/logos/wealthyminds.svg', height: 22 },
 ]
 
 const items = [...logos, ...logos]
