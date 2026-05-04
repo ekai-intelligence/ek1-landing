@@ -4,7 +4,7 @@ const logos = [
   { name: 'Secondstep Coaching', src: '/logos/secondstep.avif', height: 34 },
   { name: 'Movius', src: '/logos/movius.svg', height: 26 },
   { name: 'Kanny', src: '/logos/kanny.png', height: 34 },
-  { name: 'Angusone Staffing', src: null, height: 34 },
+  { name: 'Angusone Staffing', src: '/logos/angusone.png', height: 40 },
 ]
 
 const items = [...logos, ...logos]
