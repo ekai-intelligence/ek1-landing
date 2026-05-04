@@ -1,7 +1,13 @@
 import Rule from '@/components/ui/Rule'
 
 const col1 = ['Platform', 'Action Inbox', 'AI Search', 'Notetaker', 'App Builder']
-const col2 = ['About', 'Customers', 'Security', 'Trust centre', 'FAQs']
+const col2: { label: string; href: string }[] = [
+  { label: 'About', href: '#' },
+  { label: 'Customers', href: '#' },
+  { label: 'Security', href: '/trust-centre' },
+  { label: 'Trust centre', href: '/trust-centre' },
+  { label: 'FAQs', href: '#' },
+]
 
 export default function Footer() {
   return (
@@ -16,7 +22,7 @@ export default function Footer() {
               <span className="font-extrabold text-[17px] tracking-[-0.04em]" style={{ color: '#54A4A0', lineHeight: 1 }}>ekai</span>
             </a>
             <p className="text-muted text-sm leading-relaxed max-w-[200px]">
-              Private AI Stack for regulated teams.
+              Private AI Stack for Financial Services.
             </p>
             <p className="text-[11px] font-semibold uppercase tracking-[0.1em] text-muted-light">
               Technology partner: NVIDIA
@@ -41,10 +47,10 @@ export default function Footer() {
           <div>
             <p className="text-[11px] font-semibold uppercase tracking-[0.1em] text-muted-light mb-4">Company</p>
             <ul className="flex flex-col gap-2.5">
-              {col2.map((l) => (
-                <li key={l}>
-                  <a href="#" className="text-[13px] text-muted hover:text-ink transition-colors no-underline">
-                    {l}
+              {col2.map(({ label, href }) => (
+                <li key={label}>
+                  <a href={href} className="text-[13px] text-muted hover:text-ink transition-colors no-underline">
+                    {label}
                   </a>
                 </li>
               ))}
@@ -75,11 +81,8 @@ export default function Footer() {
             © 2026 Ekai Intelligence. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            {['Terms of use', 'Privacy policy'].map((l) => (
-              <a key={l} href="#" className="text-[12px] text-muted-light hover:text-ink transition-colors no-underline">
-                {l}
-              </a>
-            ))}
+            <a href="/terms-of-use" className="text-[12px] text-muted-light hover:text-ink transition-colors no-underline">Terms of use</a>
+            <a href="/privacy-policy" className="text-[12px] text-muted-light hover:text-ink transition-colors no-underline">Privacy policy</a>
           </div>
         </div>
       </div>
