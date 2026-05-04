@@ -1,6 +1,6 @@
 'use client'
 
-import { ButtonHTMLAttributes, AnchorHTMLAttributes } from 'react'
+import { ButtonHTMLAttributes } from 'react'
 
 interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'ghost'
