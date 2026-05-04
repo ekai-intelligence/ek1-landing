@@ -79,10 +79,10 @@ export default function Hero() {
               </motion.p>
 
               <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-3">
-                <Button variant="primary" size="lg">
+                <Button variant="primary" size="lg" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Bp7akyMIraUFtytlgVTAGtZ8heZm7J451cIuYaurqSk2UsPjjKXJA_LaGrXu8zS-gk7Cp7Eir" target="_blank" rel="noopener noreferrer">
                   Book a demo <ArrowRight size={15} className="ml-1.5" />
                 </Button>
-                <Button variant="secondary" size="lg">Get started free</Button>
+                <Button variant="secondary" size="lg" href="https://client.yourekai.com" target="_blank" rel="noopener noreferrer">Get started free</Button>
               </motion.div>
             </div>
 

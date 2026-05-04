@@ -49,8 +49,9 @@ export default function Navbar() {
 
         {/* Desktop CTAs */}
         <div className="hidden lg:flex items-center gap-3">
-          <Button variant="secondary" size="sm">Book a demo</Button>
-          <Button variant="primary" size="sm">Get started</Button>
+          <Button variant="secondary" size="sm" href="https://admin.yourekai.com" target="_blank" rel="noopener noreferrer">See deployment ↗</Button>
+          <Button variant="secondary" size="sm" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Bp7akyMIraUFtytlgVTAGtZ8heZm7J451cIuYaurqSk2UsPjjKXJA_LaGrXu8zS-gk7Cp7Eir" target="_blank" rel="noopener noreferrer">Book a demo</Button>
+          <Button variant="primary" size="sm" href="https://client.yourekai.com" target="_blank" rel="noopener noreferrer">Get started</Button>
         </div>
 
         {/* Mobile hamburger */}
@@ -77,8 +78,9 @@ export default function Navbar() {
             </a>
           ))}
           <div className="flex flex-col gap-2 pt-4 border-t border-border">
-            <Button variant="secondary" size="md" className="w-full justify-center">Book a demo</Button>
-            <Button variant="primary" size="md" className="w-full justify-center">Get started</Button>
+            <Button variant="secondary" size="md" className="w-full justify-center" href="https://admin.yourekai.com" target="_blank" rel="noopener noreferrer">See deployment ↗</Button>
+            <Button variant="secondary" size="md" className="w-full justify-center" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Bp7akyMIraUFtytlgVTAGtZ8heZm7J451cIuYaurqSk2UsPjjKXJA_LaGrXu8zS-gk7Cp7Eir" target="_blank" rel="noopener noreferrer">Book a demo</Button>
+            <Button variant="primary" size="md" className="w-full justify-center" href="https://client.yourekai.com" target="_blank" rel="noopener noreferrer">Get started</Button>
           </div>
         </div>
       )}

@@ -1,10 +1,17 @@
 'use client'
 
-import { ButtonHTMLAttributes } from 'react'
+import { ButtonHTMLAttributes, AnchorHTMLAttributes } from 'react'
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'ghost'
   size?: 'sm' | 'md' | 'lg'
+  className?: string
+  children?: React.ReactNode
+  href?: string
+  target?: string
+  rel?: string
+  type?: 'button' | 'submit' | 'reset'
+  onClick?: ButtonHTMLAttributes<HTMLButtonElement>['onClick']
 }
 
 export default function Button({
@@ -12,6 +19,9 @@ export default function Button({
   size = 'md',
   className = '',
   children,
+  href,
+  target,
+  rel,
   ...props
 }: ButtonProps) {
   const base =
@@ -29,8 +39,18 @@ export default function Button({
     ghost: 'bg-transparent text-orange border-none hover:underline px-0 rounded-none',
   }
 
+  const cls = `${base} ${sizes[size]} ${variants[variant]} ${className}`
+
+  if (href) {
+    return (
+      <a href={href} target={target} rel={rel} className={cls}>
+        {children}
+      </a>
+    )
+  }
+
   return (
-    <button className={`${base} ${sizes[size]} ${variants[variant]} ${className}`} {...props}>
+    <button className={cls} {...(props as ButtonHTMLAttributes<HTMLButtonElement>)}>
       {children}
     </button>
   )

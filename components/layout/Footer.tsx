@@ -55,13 +55,15 @@ export default function Footer() {
           <div>
             <p className="text-[11px] font-semibold uppercase tracking-[0.1em] text-muted-light mb-4">Contact</p>
             <ul className="flex flex-col gap-2.5">
-              {['Book a demo', 'hello@yourekai.com', 'LinkedIn'].map((l) => (
-                <li key={l}>
-                  <a href="#" className="text-[13px] text-muted hover:text-ink transition-colors no-underline">
-                    {l}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Bp7akyMIraUFtytlgVTAGtZ8heZm7J451cIuYaurqSk2UsPjjKXJA_LaGrXu8zS-gk7Cp7Eir" target="_blank" rel="noopener noreferrer" className="text-[13px] text-muted hover:text-ink transition-colors no-underline">Book a demo</a>
+              </li>
+              <li>
+                <a href="mailto:hello@yourekai.com" className="text-[13px] text-muted hover:text-ink transition-colors no-underline">hello@yourekai.com</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/ekai-0-1" target="_blank" rel="noopener noreferrer" className="text-[13px] text-muted hover:text-ink transition-colors no-underline">LinkedIn</a>
+              </li>
             </ul>
           </div>
         </div>

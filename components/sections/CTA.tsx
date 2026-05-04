@@ -36,10 +36,10 @@ export default function CTA() {
           </motion.p>
 
           <motion.div variants={fadeUp} className="flex flex-wrap gap-3">
-            <Button variant="primary" size="lg">
+            <Button variant="primary" size="lg" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Bp7akyMIraUFtytlgVTAGtZ8heZm7J451cIuYaurqSk2UsPjjKXJA_LaGrXu8zS-gk7Cp7Eir" target="_blank" rel="noopener noreferrer">
               Book a 15-minute review <ArrowRight size={15} className="ml-1.5" />
             </Button>
-            <Button variant="secondary" size="lg">
+            <Button variant="secondary" size="lg" href="https://client.yourekai.com" target="_blank" rel="noopener noreferrer">
               Start free trial
             </Button>
           </motion.div>

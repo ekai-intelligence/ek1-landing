@@ -82,6 +82,14 @@ export default function WhoFor() {
                   </div>
                 ))}
               </div>
+              <a
+                href="https://admin.yourekai.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-flex items-center gap-1.5 text-[13px] font-semibold text-ink hover:text-orange transition-colors no-underline"
+              >
+                See how deployment works →
+              </a>
             </motion.div>
           </div>
         </motion.div>
