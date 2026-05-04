@@ -10,21 +10,22 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: 'ekai — Private AI Stack for regulated teams',
+  title: 'ekai — Private AI for Financial Services deployed in your cloud',
   description:
-    'A complete private AI stack that runs inside your own cloud. Deploy in 48 hours. Your team gets AI that works. Your CISO gets control.',
+    'Deploy secure, sovereign AI applications within your infrastructure. Empower your teams to use AI for sensitive workflows without compromising on security or compliance.',
   openGraph: {
-    title: 'ekai — Private AI Stack for regulated teams',
+    title: 'Private AI for Financial Services deployed in your cloud',
     description:
-      'A complete private AI stack that runs inside your own cloud. Deploy in 48 hours. No data leaves your walls.',
+      'Deploy secure, sovereign AI applications within your infrastructure. Empower your teams to use AI for sensitive workflows without compromising on security or compliance.',
     url: 'https://yourekai.com',
     siteName: 'ekai',
+    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ekai — Private AI Stack for regulated teams',
+    title: 'Private AI for Financial Services deployed in your cloud',
     description:
-      'A complete private AI stack that runs inside your own cloud. Deploy in 48 hours. No data leaves your walls.',
+      'Deploy secure, sovereign AI applications within your infrastructure. Empower your teams to use AI for sensitive workflows without compromising on security or compliance.',
   },
   icons: {
     icon: [{ url: '/ekai-icon.svg', type: 'image/svg+xml' }],
