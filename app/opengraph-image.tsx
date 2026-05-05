@@ -13,24 +13,60 @@ export default function OGImage() {
     (
       <div
         style={{
-          background: '#f9f5f0',
+          background: 'linear-gradient(145deg, #0A0C18 0%, #0D0F1D 60%, #100C18 100%)',
           width: '100%',
           height: '100%',
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'center',
-          padding: '80px 96px',
+          padding: '72px 96px',
           fontFamily: 'sans-serif',
           position: 'relative',
+          overflow: 'hidden',
         }}
       >
-        {/* Top-left logo */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 56 }}>
+        {/* Decorative orb — top right */}
+        <div
+          style={{
+            position: 'absolute',
+            top: -180,
+            right: -180,
+            width: 560,
+            height: 560,
+            borderRadius: '50%',
+            background: 'rgba(224, 101, 48, 0.10)',
+          }}
+        />
+        <div
+          style={{
+            position: 'absolute',
+            top: 20,
+            right: 80,
+            width: 220,
+            height: 220,
+            borderRadius: '50%',
+            background: 'rgba(224, 101, 48, 0.07)',
+          }}
+        />
+
+        {/* Subtle left accent line */}
+        <div
+          style={{
+            position: 'absolute',
+            left: 0,
+            top: 0,
+            bottom: 0,
+            width: 3,
+            background: 'linear-gradient(to bottom, transparent, #e06530 40%, #e06530 60%, transparent)',
+          }}
+        />
+
+        {/* Brand mark */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 'auto' }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={logoSrc} width={48} height={48} alt="ekai icon" />
+          <img src={logoSrc} width={44} height={44} alt="ekai icon" />
           <span
             style={{
-              fontSize: 40,
+              fontSize: 34,
               fontWeight: 800,
               color: '#54A4A0',
               letterSpacing: '-0.04em',
@@ -44,58 +80,78 @@ export default function OGImage() {
         {/* Headline */}
         <div
           style={{
-            fontSize: 60,
-            fontWeight: 900,
-            color: '#1F1F1F',
-            lineHeight: 1.1,
-            letterSpacing: '-0.03em',
-            marginBottom: 28,
-            maxWidth: 960,
             display: 'flex',
             flexDirection: 'column',
+            marginBottom: 28,
           }}
         >
-          <span>Private AI for Financial Services</span>
-          <span style={{ color: '#e06530' }}>deployed in your cloud.</span>
+          <span
+            style={{
+              fontSize: 64,
+              fontWeight: 900,
+              color: '#FFFFFF',
+              lineHeight: 1.08,
+              letterSpacing: '-0.035em',
+            }}
+          >
+            Private AI for Financial Services
+          </span>
+          <span
+            style={{
+              fontSize: 64,
+              fontWeight: 900,
+              color: '#e06530',
+              lineHeight: 1.08,
+              letterSpacing: '-0.035em',
+            }}
+          >
+            deployed in your cloud.
+          </span>
         </div>
 
         {/* Description */}
         <div
           style={{
-            fontSize: 24,
-            color: '#746f69',
+            fontSize: 22,
+            color: 'rgba(255,255,255,0.45)',
             lineHeight: 1.55,
-            maxWidth: 800,
+            maxWidth: 820,
+            marginBottom: 56,
           }}
         >
           Deploy secure, sovereign AI applications within your infrastructure. Empower your teams to use AI for sensitive workflows without compromising on security or compliance.
         </div>
 
-        {/* Bottom-right domain */}
-        <div
-          style={{
-            position: 'absolute',
-            bottom: 56,
-            right: 96,
-            fontSize: 18,
-            color: '#b0aaa8',
-            letterSpacing: '0.08em',
-            textTransform: 'uppercase',
-            fontWeight: 600,
-          }}
-        >
-          yourekai.com
+        {/* Bottom row */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#e06530' }} />
+            <span style={{ fontSize: 15, color: 'rgba(255,255,255,0.35)', letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: 600 }}>
+              Private · Sovereign · Compliant
+            </span>
+          </div>
+          <span
+            style={{
+              fontSize: 17,
+              color: 'rgba(255,255,255,0.3)',
+              letterSpacing: '0.08em',
+              textTransform: 'uppercase',
+              fontWeight: 600,
+            }}
+          >
+            yourekai.com
+          </span>
         </div>
 
-        {/* Subtle bottom accent line */}
+        {/* Bottom accent bar */}
         <div
           style={{
             position: 'absolute',
             bottom: 0,
             left: 0,
             right: 0,
-            height: 6,
-            background: '#e06530',
+            height: 4,
+            background: 'linear-gradient(to right, #e06530, rgba(224,101,48,0.2))',
           }}
         />
       </div>
