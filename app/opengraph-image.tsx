@@ -1,7 +1,8 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
-export const alt = 'Private AI for Financial Services deployed in your cloud'
+export const alt =
+  'Comes prebuilt with sovereign AI apps for your most sensitive workflows in your private cloud on day one. Expand with more apps and workflows, no code required.'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -119,7 +120,7 @@ export default function OGImage() {
             marginBottom: 56,
           }}
         >
-          Deploy secure, sovereign AI applications within your infrastructure. Empower your teams to use AI for sensitive workflows without compromising on security or compliance.
+          Comes prebuilt with sovereign AI apps for your most sensitive workflows in your private cloud on day one. Expand with more apps and workflows, no code required.
         </div>
 
         {/* Bottom row */}

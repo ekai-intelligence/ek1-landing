@@ -74,8 +74,8 @@ export default function Hero() {
                 <br />deployed in your cloud.
               </motion.p>
 
-              <motion.p variants={fadeUp} className="text-muted leading-relaxed max-w-[440px]" style={{ fontSize: '16px' }}>
-                Deploy secure, sovereign AI applications within your infrastructure. Empower your teams to use AI for sensitive workflows without compromising on security or compliance.
+              <motion.p variants={fadeUp} className="text-muted leading-relaxed max-w-[520px]" style={{ fontSize: '16px' }}>
+                Comes prebuilt with sovereign AI apps for your most sensitive workflows on day one. Expand with more apps and workflows, no code required.
               </motion.p>
 
               <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-3">

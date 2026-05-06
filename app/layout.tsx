@@ -12,12 +12,12 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: 'ekai — Private AI for Financial Services deployed in your cloud',
   description:
-    'Deploy secure, sovereign AI applications within your infrastructure. Empower your teams to use AI for sensitive workflows without compromising on security or compliance.',
+    'Comes prebuilt with sovereign AI apps for your most sensitive workflows in your private cloud on day one. Expand with more apps and workflows, no code required.',
   openGraph: {
     title: 'Private AI for Financial Services deployed in your cloud',
     description:
-      'Deploy secure, sovereign AI applications within your infrastructure. Empower your teams to use AI for sensitive workflows without compromising on security or compliance.',
-    url: 'https://yourekai.com',
+      'Comes prebuilt with sovereign AI apps for your most sensitive workflows in your private cloud on day one. Expand with more apps and workflows, no code required.',
+    url: 'https://ek1.ai',
     siteName: 'ekai',
     type: 'website',
   },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Private AI for Financial Services deployed in your cloud',
     description:
-      'Deploy secure, sovereign AI applications within your infrastructure. Empower your teams to use AI for sensitive workflows without compromising on security or compliance.',
+      'Comes prebuilt with sovereign AI apps for your most sensitive workflows in your private cloud on day one. Expand with more apps and workflows, no code required.',
   },
   icons: {
     icon: [{ url: '/ekai-icon.svg', type: 'image/svg+xml' }],
