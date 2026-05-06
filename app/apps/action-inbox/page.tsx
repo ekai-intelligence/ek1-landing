@@ -18,7 +18,7 @@ const features = [
   },
   {
     title: 'One-click actions',
-    copy: 'Reply, reassign, close, or escalate directly from Action Inbox. Actions sync back to the original tool instantly.',
+    copy: 'Reply, reassign, close, or escalate directly from Your Chief of Staff. Actions sync back to the original tool instantly.',
   },
   {
     title: 'Daily digest',
@@ -48,7 +48,7 @@ const steps = [
   {
     num: '03',
     title: 'Act without switching tabs',
-    copy: 'Reply, close, escalate — all from Action Inbox. Changes sync back to the source tool automatically.',
+    copy: 'Reply, close, escalate — all from Your Chief of Staff. Changes sync back to the source tool automatically.',
   },
 ]
 
@@ -75,7 +75,7 @@ export default function ActionInboxPage() {
                   <ArrowLeft size={12} /> All apps
                 </a>
                 <span className="text-border">|</span>
-                <Label>Action Inbox</Label>
+                <Label>Your Chief of Staff</Label>
               </motion.div>
 
               <motion.h1
@@ -87,7 +87,7 @@ export default function ActionInboxPage() {
               </motion.h1>
 
               <motion.p variants={fadeUp} className="text-muted text-lg leading-relaxed">
-                Action Inbox aggregates signals from every tool your team uses, ranks them by urgency, and lets you take action without leaving ekai.
+                Your Chief of Staff aggregates signals from every tool your team uses, ranks them by urgency, and lets you take action without leaving ekai.
               </motion.p>
 
               <motion.div variants={fadeUp} className="flex flex-wrap gap-3">

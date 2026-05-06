@@ -1,6 +1,6 @@
 import Rule from '@/components/ui/Rule'
 
-const col1 = ['Platform', 'Action Inbox', 'AI Search', 'Notetaker', 'App Builder']
+const col1 = ['Platform', 'Your Chief of Staff', 'AI Search', 'Notetaker', 'App Builder']
 const col2: { label: string; href: string }[] = [
   { label: 'About', href: '#' },
   { label: 'Customers', href: '#' },

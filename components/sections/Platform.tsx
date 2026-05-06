@@ -10,7 +10,7 @@ const extensibilityCards = [
   {
     icon: LayoutGrid,
     title: 'Ready on day one',
-    copy: 'Action Inbox, Private GPT, and AI Twin ship with every deployment. Your team is productive from the first login.',
+    copy: 'Your Chief of Staff, Private GPT, and AI Twin ship with every deployment. Your team is productive from the first login.',
   },
   {
     icon: Code2,
@@ -59,7 +59,7 @@ export default function Platform() {
                 <span className="text-xs font-medium uppercase tracking-widest text-mid-grey">Your Apps</span>
               </div>
               <div className="flex flex-wrap gap-3">
-                {['Action Inbox', 'Private GPT', 'AI Twin', '+ Your Apps', '+ Certified Apps'].map((app) => (
+                {['Your Chief of Staff', 'Private GPT', 'AI Twin', '+ Your Apps', '+ Certified Apps'].map((app) => (
                   <span
                     key={app}
                     className={`px-4 py-2 rounded-pill text-sm font-medium border ${

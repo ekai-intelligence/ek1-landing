@@ -43,7 +43,7 @@ export default function ActionInbox() {
         >
           {/* Label + headline */}
           <motion.div variants={fadeUp} className="flex flex-col gap-4 max-w-xl">
-            <SectionLabel>Action Inbox</SectionLabel>
+            <SectionLabel>Your Chief of Staff</SectionLabel>
             <h2
               className="font-bold leading-[1.15] tracking-[-1.5px] text-white"
               style={{ fontSize: 'clamp(28px, 4vw, 48px)' }}
@@ -78,7 +78,7 @@ export default function ActionInbox() {
                 <span className="w-2.5 h-2.5 rounded-full bg-danger/60" />
                 <span className="w-2.5 h-2.5 rounded-full bg-orange/60" />
                 <span className="w-2.5 h-2.5 rounded-full bg-teal/60" />
-                <span className="ml-4 text-white/40 text-xs">Action Inbox — ekai</span>
+                <span className="ml-4 text-white/40 text-xs">Your Chief of Staff — ekai</span>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-[240px_1fr]">

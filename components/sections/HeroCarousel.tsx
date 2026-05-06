@@ -157,7 +157,7 @@ function NotetakerScreen() {
   )
 }
 
-// ── Screen 2: Action Inbox ────────────────────────────────────────────────────
+// ── Screen 2: Your Chief of Staff (action-inbox route) ─────────────────────────
 const srcColors: Record<string, string> = { Slack: '#E01E5A', JIRA: '#0052CC', Gmail: '#EA4335' }
 
 function ActionInboxScreen() {
@@ -184,7 +184,7 @@ function ActionInboxScreen() {
       {/* Top bar */}
       <div className="flex items-center justify-between px-5 py-2.5 border-b" style={{ borderColor: BORDER }}>
         <div className="flex items-center gap-2">
-          <span className="text-[11px] font-black tracking-tight" style={{ color: INK }}>Action Inbox</span>
+          <span className="text-[11px] font-black tracking-tight" style={{ color: INK }}>Your Chief of Staff</span>
           <span
             className="text-[8px] font-bold px-1.5 py-0.5 rounded-full"
             style={{ backgroundColor: 'rgba(224,101,48,0.1)', color: ORANGE }}

@@ -1,16 +1,16 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Inbox, MessageSquare, User } from 'lucide-react'
+import { Briefcase, MessageSquare, User } from 'lucide-react'
 import SectionLabel from '@/components/ui/SectionLabel'
 import { fadeUp, staggerContainer, viewportConfig } from '@/lib/animations'
 
 const apps = [
   {
-    icon: Inbox,
+    icon: Briefcase,
     iconBg: 'bg-orange/10',
     iconColor: 'text-orange',
-    name: 'Action Inbox',
+    name: 'Your Chief of Staff',
     tagline: 'From every meeting to every action. Automatically.',
     copy: 'ekai joins your meetings, understands what was said and what needs to happen, and populates your Jira, Slack, email, and CRM with ready-to-send drafts before you close your laptop.',
     tag: 'Meeting Intelligence',

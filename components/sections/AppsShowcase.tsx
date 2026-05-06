@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Inbox, Mic, Search, PenLine } from 'lucide-react'
+import { Briefcase, Mic, Search, PenLine } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 import Label from '@/components/ui/Label'
 import Rule from '@/components/ui/Rule'
@@ -10,8 +10,8 @@ import { fadeUp, staggerContainer, viewportConfig } from '@/lib/animations'
 const apps: { slug: string; name: string; Icon: LucideIcon; description: string; features: string[] }[] = [
   {
     slug: 'action-inbox',
-    name: 'Action Inbox',
-    Icon: Inbox,
+    name: 'Your Chief of Staff',
+    Icon: Briefcase,
     description: 'Aggregates signals from Teams, Outlook, JIRA, and GitHub and displays in a prioritized feed, by urgency so nothing slips through the cracks.',
     features: ['Smart prioritization', 'Multi-source aggregation', 'One-click actions'],
   },

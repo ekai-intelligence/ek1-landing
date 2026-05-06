@@ -6,7 +6,7 @@ import AppPill from '@/components/ui/AppPill'
 import Rule from '@/components/ui/Rule'
 import { fadeUp, staggerContainer, viewportConfig } from '@/lib/animations'
 
-const liveApps = ['Notetaker', 'Action Inbox', 'AI Search', 'Drafting']
+const liveApps = ['Notetaker', 'Your Chief of Staff', 'AI Search', 'Drafting']
 const comingApps = ['App Builder', 'Marketplace Q3']
 
 export default function Solution() {
@@ -60,7 +60,7 @@ export default function Solution() {
               },
               {
                 label: 'Default apps on day one',
-                copy: 'Notetaker, Action Inbox, AI Search, and Drafting ship with every deployment. Productive from login.',
+                copy: 'Notetaker, Your Chief of Staff, AI Search, and Drafting ship with every deployment. Productive from login.',
               },
               {
                 label: 'Build and extend',
