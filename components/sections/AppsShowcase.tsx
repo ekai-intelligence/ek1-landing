@@ -10,7 +10,7 @@ import { fadeUp, staggerContainer, viewportConfig } from '@/lib/animations'
 const apps: { slug: string; name: string; Icon: LucideIcon; description: string; features: string[] }[] = [
   {
     slug: 'action-inbox',
-    name: 'Your Chief of Staff',
+    name: 'Your AI chief of staff',
     Icon: Briefcase,
     description: 'Aggregates signals from Teams, Outlook, JIRA, and GitHub and displays in a prioritized feed, by urgency so nothing slips through the cracks.',
     features: ['Smart prioritization', 'Multi-source aggregation', 'One-click actions'],
