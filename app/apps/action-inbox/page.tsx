@@ -83,11 +83,11 @@ export default function ActionInboxPage() {
                 className="font-black text-ink leading-[1.05] tracking-[-0.035em]"
                 style={{ fontSize: 'clamp(36px, 5.5vw, 68px)' }}
               >
-                One feed for everything your team needs to act on.
+                Know what needs you before you even ask.
               </motion.h1>
 
               <motion.p variants={fadeUp} className="text-muted text-lg leading-relaxed">
-                Your Chief of Staff aggregates signals from every tool your team uses, ranks them by urgency, and lets you take action without leaving ekai.
+                Your AI enabled Chief of Staff watches every tool your team works in, surfaces what actually needs your attention today, and lets you act on it without opening a single tab.
               </motion.p>
 
               <motion.div variants={fadeUp} className="flex flex-wrap gap-3">
