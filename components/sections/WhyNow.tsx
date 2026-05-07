@@ -31,7 +31,7 @@ export default function WhyNow() {
                 className="font-bold text-white leading-[1.2] tracking-[-0.025em]"
                 style={{ fontSize: 'clamp(24px, 3vw, 36px)' }}
               >
-                AI adoption is top of mind for most executives and your team wants same. The company leveraging AI right will be the market leader.
+                AI adoption is top of mind for most executives and your team wants same.
               </p>
               <p className="text-white/50 text-[16px] leading-relaxed">
                 This creates urgency where many leaders are choosing speed over governance.
