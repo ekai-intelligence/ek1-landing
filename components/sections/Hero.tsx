@@ -61,7 +61,7 @@ export default function Hero() {
               >
                 AI built for the data
                 <br />
-                you can't afford to leak.
+                you can&apos;t afford to leak.
               </motion.h1>
 
               {/* Orange statement */}
