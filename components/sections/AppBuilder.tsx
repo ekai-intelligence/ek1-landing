@@ -88,7 +88,7 @@ export default function AppBuilder() {
           {/* Footer note */}
           <motion.div variants={fadeUp} className="border-t border-white/10 pt-8">
             <p className="text-white/35 text-[13px] leading-relaxed max-w-[520px]">
-              Apps built with App Builder run in the same private cloud as your ekai workspace and have access to your context. They inherit all existing security and compliance controls automatically.
+              Every app runs in your cloud, with your data, under your security rules. Nothing changes except what your team can build.
             </p>
           </motion.div>
         </motion.div>

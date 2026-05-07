@@ -59,9 +59,9 @@ export default function Hero() {
                 className="font-black text-ink leading-[1.05] tracking-[-0.03em] whitespace-nowrap mt-4 mb-3"
                 style={{ fontSize: 'clamp(18px, 2vw, 26px)' }}
               >
-                Use AI where it matters,
+                AI built for the data
                 <br />
-                not just where it&apos;s allowed.
+                you can't afford to leak.
               </motion.h1>
 
               {/* Orange statement */}
