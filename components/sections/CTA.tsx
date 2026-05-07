@@ -10,13 +10,13 @@ import { fadeUp, staggerContainer, viewportConfig } from '@/lib/animations'
 export default function CTA() {
   return (
     <section id="cta" className="bg-cream">
-      <div className="max-w-content mx-auto px-6 md:px-12 py-24 md:py-32">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-24 md:py-32">
         <motion.div
           variants={staggerContainer}
           initial="initial"
           whileInView="animate"
           viewport={viewportConfig}
-          className="flex flex-col gap-10 max-w-[700px]"
+          className="flex flex-col items-center text-center gap-10"
         >
           <motion.div variants={fadeUp}>
             <Label>Get started</Label>
@@ -24,18 +24,18 @@ export default function CTA() {
 
           <motion.h2
             variants={fadeUp}
-            className="font-black text-ink leading-[1.05] tracking-[-0.035em]"
-            style={{ fontSize: 'clamp(36px, 5vw, 64px)' }}
+            className="font-black text-ink leading-[1.2] tracking-[-0.03em] w-full"
+            style={{ fontSize: 'clamp(24px, 3vw, 44px)' }}
           >
-            Private AI stack to supercharge your team&apos;s AI Adoption.
+            Your Private AI ecosystem to supercharge<br className="hidden md:block" /> your team&apos;s AI adoption.
           </motion.h2>
 
-          <motion.p variants={fadeUp} className="text-muted text-[17px] leading-relaxed max-w-[480px]">
+          <motion.p variants={fadeUp} className="text-muted text-[18px] leading-relaxed max-w-[540px]">
             Deploy inside your own cloud in under 48 hours. No data on our
             servers. Ever.
           </motion.p>
 
-          <motion.div variants={fadeUp} className="flex flex-wrap gap-3">
+          <motion.div variants={fadeUp} className="flex flex-wrap justify-center gap-3">
             <Button variant="primary" size="lg" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Bp7akyMIraUFtytlgVTAGtZ8heZm7J451cIuYaurqSk2UsPjjKXJA_LaGrXu8zS-gk7Cp7Eir" target="_blank" rel="noopener noreferrer">
               Book a 15-minute review <ArrowRight size={15} className="ml-1.5" />
             </Button>
