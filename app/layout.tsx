@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
-import { Manrope } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 
-const manrope = Manrope({
+const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-manrope',
+  variable: '--font-inter',
   display: 'swap',
-  weight: ['400', '500', '600', '700', '800'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
 })
 
 export const metadata: Metadata = {
@@ -38,8 +38,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={manrope.variable}>
-      <body className="font-sans antialiased bg-cream text-ink">{children}</body>
+    <html lang="en" className={inter.variable}>
+      <body className="antialiased bg-cream text-ink">{children}</body>
     </html>
   )
 }

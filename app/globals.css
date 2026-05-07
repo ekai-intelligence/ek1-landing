@@ -26,7 +26,7 @@ html {
 body {
   color: var(--ink);
   background: var(--cream);
-  font-family: var(--font-manrope), 'Manrope', sans-serif;
+  font-family: var(--font-inter), 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';

@@ -18,7 +18,7 @@ const config: Config = {
         'muted-light': '#9ca3af',
       },
       fontFamily: {
-        sans: ['var(--font-manrope)', 'Manrope', 'sans-serif'],
+        sans: ['var(--font-inter)', 'Inter', 'sans-serif'],
       },
       letterSpacing: {
         label: '0.12em',
