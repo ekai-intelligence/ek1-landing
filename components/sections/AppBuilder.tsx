@@ -7,18 +7,18 @@ import { fadeUp, staggerContainer, viewportConfig } from '@/lib/animations'
 const steps = [
   {
     num: '01',
-    title: 'Define your workflow',
-    copy: 'Describe the task your team repeats every week. App Builder turns it into a structured AI app template — no code required.',
+    title: 'Describe what you need',
+    copy: 'Tell ekai what your team does every week. It turns your words into a structured AI app — no code, no engineering ticket, no waiting.',
   },
   {
     num: '02',
     title: 'Connect your data',
-    copy: 'Point the app at the tools and documents it needs: Teams, One Drive, JIRA, Github. Everything stays private.',
+    copy: 'Point it at the tools your team already uses — Teams, One Drive, Jira, Github. Everything stays inside your cloud.',
   },
   {
     num: '03',
-    title: 'Deploy to your org',
-    copy: 'Publish to your ekai workspace. Your entire team can use the app the same day - no IT ticket, no engineering backlog.',
+    title: 'Ship it to your team today',
+    copy: 'One click and your entire org has a new tool. No backlog. No approvals. No IT involved.',
   },
 ]
 
@@ -39,7 +39,7 @@ export default function AppBuilder() {
               <span className="inline-flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-orange" />
                 <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-orange">
-                  App Builder
+                  Internal App Store
                 </span>
               </span>
             </motion.div>
@@ -49,14 +49,14 @@ export default function AppBuilder() {
                   className="font-bold text-white leading-[1.15] tracking-[-0.025em]"
                   style={{ fontSize: 'clamp(24px, 3vw, 40px)' }}
                 >
-                  Build and Deploy AI apps within mins on your cloud.
+                  Your next great internal tool is one prompt away.
                 </p>
                 <div className="flex-shrink-0 mt-1">
                   <AppPill label="Coming Soon" live={false} />
                 </div>
               </div>
               <p className="text-white/50 text-[17px] leading-relaxed max-w-[520px]">
-                Every team has workflows too specific for off-the-shelf tools. Our Prompt based app Builder lets everyone turn those repeating tasks into production AI apps.
+                Stop adapting your work to fit the tools. Build tools that fit your work, in minutes.
               </p>
             </motion.div>
           </div>
